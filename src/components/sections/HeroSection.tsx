@@ -36,7 +36,7 @@ export const HeroSection = () => {
             className="mb-4"
           >
             <span className="inline-block px-4 py-2 rounded-full border border-primary/30 bg-primary/5 text-primary text-sm font-mono">
-              Blockchain Researcher & RevOps Professional
+              Blockchain Research & RevOps
             </span>
           </motion.div>
 
