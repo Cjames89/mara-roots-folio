@@ -56,7 +56,7 @@ export const HeroSection = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto"
           >
-            Revenue Operations at MARA. Exploring the intersection of blockchain technology, 
+            Revenue Operations at MARA. Exploring the Intersection of Blockchain Technology, 
            Artifical Intelligence and High Performance Computing.
           </motion.p>
 
