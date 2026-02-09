@@ -28,10 +28,12 @@ export const AboutSection = () => {
             <div className="relative group mx-auto max-w-md">
               <div className="absolute -inset-2 bg-gradient-to-r from-primary via-accent to-primary rounded-2xl blur-lg opacity-30 group-hover:opacity-50 transition-opacity duration-500" />
               <div className="relative aspect-square rounded-2xl bg-card border border-border overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="text-6xl font-mono text-muted-foreground/50">[ PHOTO ]</span>
-                </div>
+            <img 
+  src="https://www.linkedin.com/me?trk=p_mwlite_profile_self-secondary_nav#overlay_profile-image-modal" 
+  alt="Connor Selfridge" 
+  className="w-full h-full object-cover" 
+/>
+
               </div>
               {/* Decorative elements */}
               <div className="absolute -top-4 -right-4 w-24 h-24 border border-primary/30 rounded-lg" />
