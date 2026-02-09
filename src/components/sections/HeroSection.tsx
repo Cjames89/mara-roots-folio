@@ -46,8 +46,8 @@ export const HeroSection = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
           >
-            Building the Future of{" "}
-            <span className="text-gradient">Decentralized Systems</span>
+            Connor{" "}
+            <span className="text-gradient">Selfridge</span>
           </motion.h1>
 
           <motion.p
@@ -57,7 +57,7 @@ export const HeroSection = () => {
             className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto"
           >
             Revenue Operations at MARA. Exploring the intersection of blockchain technology, 
-            operational excellence, and strategic growth.
+           Artifical Intelligence and High Performance Computing.
           </motion.p>
 
           <motion.div
