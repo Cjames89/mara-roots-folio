@@ -4,9 +4,9 @@ import { Badge } from "@/components/ui/badge";
 
 const experiences = [
   {
-    title: "Revenue Operations Specialist",
+    title: "Revenue Operations",
     company: "MARA (Marathon Digital Holdings)",
-    period: "2022 - Present",
+    period: "2025 - Present",
     description: "Leading revenue operations strategy for one of the largest Bitcoin mining companies. Implementing data-driven processes and automation to scale operations.",
     achievements: [
       "Scaled revenue reporting infrastructure by 300%",
@@ -19,7 +19,7 @@ const experiences = [
   {
     title: "Blockchain Research",
     company: "Shield3",
-    period: "2020 - 2022",
+    period: "2024",
     description: "Conducted in-depth research on DeFi protocols and tokenomics. Published analysis on emerging blockchain technologies and market trends.",
     achievements: [
       "Authored 15+ research reports on DeFi protocols",
@@ -32,7 +32,7 @@ const experiences = [
   {
     title: "Stablecoin Development",
     company: "Jewel Bank",
-    period: "2018 - 2020",
+    period: "2023",
     description: "Built operational foundations for a fast-growing tech company. Focused on process optimization and systems integration.",
     achievements: [
       "Implemented CRM and marketing automation stack",
