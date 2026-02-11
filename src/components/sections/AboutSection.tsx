@@ -29,7 +29,7 @@ export const AboutSection = () => {
               <div className="absolute -inset-2 bg-gradient-to-r from-primary via-accent to-primary rounded-2xl blur-lg opacity-30 group-hover:opacity-50 transition-opacity duration-500" />
               <div className="relative aspect-square rounded-2xl bg-card border border-border overflow-hidden">
             <img 
-  src="public/IMG_6723.jpeg" 
+  src="/IMG_6723.jpeg" 
   alt="Connor Selfridge" 
   className="w-full h-full object-cover" 
 />
