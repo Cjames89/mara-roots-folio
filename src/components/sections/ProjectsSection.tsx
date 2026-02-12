@@ -7,15 +7,15 @@ import { ExternalLink, Github, Layers } from "lucide-react";
 
 const projects = [
   {
-    title: "Mining Operations Dashboard",
-    description: "Real-time monitoring and analytics platform for Bitcoin mining operations. Tracks hash rate, energy consumption, and profitability metrics.",
-    problem: "Mining operations lacked visibility into real-time performance metrics.",
-    solution: "Built a comprehensive dashboard integrating multiple data sources.",
-    impact: "Reduced operational response time by 60% and improved efficiency.",
+    title: "Sovereign GPU as a Service Dashboard",
+    description: "Data sovereingty focused GPU rental platform with leaderboard tracking and data security scores based on compute providers.",
+    problem: "GPU Rental services lack data security and protection features without proper analysis of how GPU providers utilize data.",
+    solution: "Built a comprehensive dashboard integrating sovereign GPU rental sources.",
+    impact: "Improved sovereign data climate with interface for secure compute.",
     image: "/placeholder.svg",
     tags: ["Python", "React", "PostgreSQL", "APIs"],
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl: "https://cjames89.github.io/sovereign-compute-marketplace/#/marketplace",
+    githubUrl: "https://github.com/Cjames89/sovereign-compute-marketplace.git",
     featured: true,
   },
   {
