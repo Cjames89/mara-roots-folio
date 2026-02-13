@@ -7,25 +7,25 @@ const socialLinks = [
   {
     name: "LinkedIn",
     icon: Linkedin,
-    href: "#",
+    href: "https://www.linkedin.com/in/connor-selfridge/",
     color: "hover:text-[#0A66C2]",
   },
   {
     name: "Twitter / X",
     icon: Twitter,
-    href: "#",
+    href: "https://x.com/ConnorSelfridge",
     color: "hover:text-foreground",
   },
   {
     name: "GitHub",
     icon: Github,
-    href: "#",
+    href: "https://github.com/Cjames89",
     color: "hover:text-foreground",
   },
   {
     name: "Email",
     icon: Mail,
-    href: "mailto:your@email.com",
+    href: "mailto:cjselfridge@gmail.com",
     color: "hover:text-primary",
   },
 ];
