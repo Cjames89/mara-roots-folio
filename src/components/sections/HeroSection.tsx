@@ -83,9 +83,9 @@ export const HeroSection = () => {
             className="flex gap-4 justify-center"
           >
             {[
-              { icon: Linkedin, href: "#", label: "LinkedIn" },
-              { icon: Twitter, href: "#", label: "Twitter" },
-              { icon: Github, href: "#", label: "GitHub" },
+              { icon: Linkedin, href: "https://www.linkedin.com/in/connor-selfridge/", label: "LinkedIn" },
+              { icon: Twitter, href: "https://x.com/ConnorSelfridge", label: "Twitter" },
+              { icon: Github, href: "https://github.com/Cjames89", label: "GitHub" },
             ].map(({ icon: Icon, href, label }) => (
               <motion.a
                 key={label}
