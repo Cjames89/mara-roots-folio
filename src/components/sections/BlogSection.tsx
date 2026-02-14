@@ -7,7 +7,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { ExternalLink, Rss, Mail } from "lucide-react";
 
 // Configure your Substack URL here
-const SUBSTACK_URL = "your-substack"; // Change this to your Substack username
+const SUBSTACK_URL = "connorselfridge"; // Change this to your Substack username
 
 interface BlogPost {
   title: string;
@@ -49,7 +49,7 @@ export const BlogSection = () => {
         // Attempt to fetch RSS feed
         // Note: In production, you'd use a CORS proxy or backend to fetch the RSS
         // For now, we'll use demo posts
-        if (SUBSTACK_URL === "your-substack") {
+        if (SUBSTACK_URL === "connorselfridge") {
           // No Substack configured, use demo posts
           setPosts(demoPosts);
           setLoading(false);
