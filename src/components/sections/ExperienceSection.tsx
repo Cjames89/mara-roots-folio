@@ -7,13 +7,13 @@ const experiences = [
     title: "Revenue Operations",
     company: "MARA (Marathon Digital Holdings)",
     period: "2025 - Present",
-    description: "Leading revenue operations strategy for one of the largest Bitcoin mining companies. Implementing data-driven processes and automation to scale operations.",
+    description: "Leading revenue operations and strategy for one of the largest Bitcoin mining companies. Implementing data-driven processes and automation to scale operations.",
     achievements: [
-      "Scaled revenue reporting infrastructure by 300%",
-      "Automated key operational workflows saving 40+ hours/month",
-      "Led cross-functional initiatives between mining ops and finance",
+      "Streamlined GTM workflows and processes saving operational efficiency",
+      "Reported key inisghts to upper management and stakeholders",
+      "Led cross-functional initiatives between operations and finance",
     ],
-    tags: ["Bitcoin Mining", "RevOps", "Data Analytics"],
+    tags: ["AI Infrastructure", "RevOps", "Data Analytics"],
     current: true,
   },
   {
@@ -22,9 +22,9 @@ const experiences = [
     period: "2024",
     description: "Conducted in-depth research on DeFi protocols and tokenomics. Published analysis on emerging blockchain technologies and market trends.",
     achievements: [
-      "Authored 15+ research reports on DeFi protocols",
-      "Developed proprietary analytics frameworks",
-      "Presented findings at major blockchain conferences",
+      "Authored 5+ research reports on DeFi and security protocols",
+      "Developed proprietary analytics frameworks for key stakeholders",
+      "Presented pitch decks for 10+ VC portfolio investments",
     ],
     tags: ["DeFi", "Research", "Tokenomics"],
     current: false,
@@ -35,9 +35,9 @@ const experiences = [
     period: "2023",
     description: "Built operational foundations for a fast-growing tech company. Focused on process optimization and systems integration.",
     achievements: [
-      "Implemented CRM and marketing automation stack",
-      "Reduced operational costs by 25%",
-      "Built reporting dashboards for executive team",
+      "Implemented and tested stablecoin integration with banking platformk",
+      "Increased customer pipeline by 25%",
+      "Built analytics dashboards for executive team",
     ],
     tags: ["Operations", "Automation", "Analytics"],
     current: false,
@@ -55,7 +55,7 @@ export const ExperienceSection = () => {
             Professional <span className="text-gradient">Experience</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            A journey through blockchain innovation and operational excellence
+            A journey through innovation and operational excellence
           </p>
         </AnimatedSection>
 
