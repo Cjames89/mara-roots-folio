@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 const skills = [
   { category: "Blockchain", items: ["Bitcoin", "Ethereum", "DeFi", "Mining Operations", "Tokenomics"] },
   { category: "RevOps", items: ["Salesforce", "HubSpot", "Data Analytics", "Process Automation", "Revenue Forecasting"] },
-  { category: "Technical", items: ["Python", "SQL", "Tableau", "Power BI", "API Integrations"] },
+  { category: "Technical", items: ["Python", "SQL", "API Integrations"] },
 ];
 
 export const AboutSection = () => {
@@ -18,7 +18,7 @@ export const AboutSection = () => {
             About <span className="text-gradient">Me</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Bridging the gap between cutting-edge blockchain technology and operational excellence
+            Leading through operational efficiency and tech fluency
           </p>
         </AnimatedSection>
 
@@ -48,15 +48,15 @@ export const AboutSection = () => {
               </div>
               
               <p className="text-lg leading-relaxed text-muted-foreground">
-                I'm a blockchain enthusiast and revenue operations professional with a passion for 
-                building scalable systems. At MARA, I lead initiatives that bridge technical 
-                infrastructure with strategic business operations.
+                I am a revunue operations specialist and blockchain enthusiast focused on research and
+                development. At MARA and other crypto-centric startups I have led initatives to bridge
+                the gap batween technical infrastructure and traditional business operations.
               </p>
               
               <p className="text-lg leading-relaxed text-muted-foreground">
-                My research focuses on the intersection of Bitcoin mining economics, decentralized 
-                finance protocols, and enterprise-grade operational frameworks. I believe in the 
-                transformative power of blockchain technology to reshape industries.
+                My research focuses on the economics of Bitcoin mining, AI infrastructure, and
+                enterprise-grade operational frameworks. I believe that the synergies of these
+                technologies can reshape industries worldwide.
               </p>
 
               <div className="pt-6 space-y-6">
