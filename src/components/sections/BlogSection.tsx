@@ -161,13 +161,13 @@ export const BlogSection = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button className="glow" asChild>
-                    <a href={substackFullUrl} target="_blank" rel="noopener noreferrer">
+                    <a href={https://substack.com/@connorselfridge?r=26ltyl&utm_medium=ios&utm_source=profile&shareImageVariant=image} target="_blank" rel="noopener noreferrer">
                       <Mail className="h-4 w-4 mr-2" />
                       Subscribe on Substack
                     </a>
                   </Button>
                   <Button variant="outline" className="border-border" asChild>
-                    <a href={substackFullUrl} target="_blank" rel="noopener noreferrer">
+                    <a href={https://substack.com/@connorselfridge?r=26ltyl&utm_medium=ios&utm_source=profile&shareImageVariant=image} target="_blank" rel="noopener noreferrer">
                       View All Posts
                       <ExternalLink className="h-4 w-4 ml-2" />
                     </a>
