@@ -13,19 +13,19 @@ const projects = [
     solution: "Built a comprehensive dashboard integrating sovereign GPU rental sources.",
     impact: "Improved sovereign data climate with interface for secure compute.",
     image: "/placeholder.svg",
-    tags: ["Python", "React", "PostgreSQL", "APIs"],
+    tags: ["TypeScript", "React", "APIs"],
     liveUrl: "https://cjames89.github.io/sovereign-compute-marketplace/#/marketplace",
     githubUrl: "https://github.com/Cjames89/sovereign-compute-marketplace.git",
     featured: true,
   },
   {
-    title: "Revenue Forecasting Model",
-    description: "Machine learning model for predicting mining revenue based on hash rate, difficulty adjustments, and market conditions.",
-    problem: "Revenue predictions were manual and often inaccurate.",
-    solution: "Developed ML model incorporating multiple market variables.",
-    impact: "Improved forecast accuracy by 40% quarter-over-quarter.",
+    title: "Commodities Trading Platform",
+    description: "Machine learning model for analyzing commodities futures trading and hedging strategies for mining companies.",
+    problem: "Volatile revenue projections from metallurgical coal miners.",
+    solution: "Developed upon ML model to create futures hedging strategy.",
+    impact: "Partner saved roughly 25% on volatiloty spikes through hedging",
     image: "/placeholder.svg",
-    tags: ["Python", "TensorFlow", "SQL", "Tableau"],
+    tags: ["Python", "SQL", "PowerBI"],
     liveUrl: "#",
     githubUrl: "#",
     featured: true,
@@ -43,16 +43,16 @@ const projects = [
     featured: false,
   },
   {
-    title: "RevOps Automation Suite",
-    description: "Suite of automation tools connecting Salesforce, HubSpot, and internal systems for seamless data flow.",
-    problem: "Manual data entry between systems caused delays and errors.",
-    solution: "Built integration layer with automated sync and validation.",
-    impact: "Eliminated 30+ hours of manual work per month.",
+ title: "Revenue Forecasting Model",
+    description: "Machine learning model for predicting mining revenue based on hash rate, difficulty adjustments, and market conditions.",
+    problem: "Revenue predictions were manual and often inaccurate.",
+    solution: "Developed ML model incorporating multiple market variables.",
+    impact: "Improved forecast accuracy by 40% quarter-over-quarter.",
     image: "/placeholder.svg",
-    tags: ["Zapier", "Python", "APIs", "Salesforce"],
+    tags: ["Python", "TensorFlow", "SQL", "Tableau"],
     liveUrl: "#",
     githubUrl: null,
-    featured: false,
+    featured: true,
   },
 ];
 
@@ -67,7 +67,7 @@ export const ProjectsSection = () => {
             Featured <span className="text-gradient">Projects</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Turning complex problems into elegant solutions
+            Turning complex problems into scalable solutions
           </p>
         </AnimatedSection>
 
