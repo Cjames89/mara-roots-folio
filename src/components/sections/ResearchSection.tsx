@@ -10,18 +10,18 @@ const categories = ["All", "Blockchain", "RevOps", "Mining"];
 
 const publications = [
   {
-    title: "The Economics of Bitcoin Mining in 2024",
-    abstract: "An in-depth analysis of mining profitability, hash rate dynamics, and the impact of halving events on the broader cryptocurrency ecosystem.",
-    date: "January 2024",
+    title: "Bitcoin Mining in the Quantum-era",
+    abstract: "An in-depth analysis of Bitcoin mining in a quantum-era, will the network be at risk, or more secure?",
+    date: "February 2026",
     category: "Mining",
     link: "#",
     type: "Research Paper",
   },
   {
-    title: "Revenue Operations for Web3 Companies",
-    abstract: "A framework for implementing scalable revenue operations in decentralized organizations and crypto-native businesses.",
-    date: "November 2023",
-    category: "RevOps",
+    title: "Financial Analysis of AI Infrastructure",
+    abstract: "An overview of the AI infrastrucutre markets, key players and market positioning.",
+    date: "March 20263",
+    category: "Financial Anlaysis",
     link: "#",
     type: "Article",
   },
