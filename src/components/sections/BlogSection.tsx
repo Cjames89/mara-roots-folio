@@ -49,7 +49,7 @@ export const BlogSection = () => {
         // Attempt to fetch RSS feed
         // Note: In production, you'd use a CORS proxy or backend to fetch the RSS
         // For now, we'll use demo posts
-        if (SUBSTACK_URL === "connorselfridge") {
+        if (SUBSTACK_URL === "your-substack") {
           // No Substack configured, use demo posts
           setPosts(demoPosts);
           setLoading(false);
@@ -82,7 +82,7 @@ export const BlogSection = () => {
     });
   };
 
-  const substackFullUrl = SUBSTACK_URL === "connorselfridge" 
+  const substackFullUrl = SUBSTACK_URL === "your-substack" 
     ? "#" 
     : `https://${SUBSTACK_URL}.substack.com`;
 
