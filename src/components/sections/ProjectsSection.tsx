@@ -52,7 +52,7 @@ const projects = [
     tags: ["Python", "TensorFlow", "SQL", "Tableau"],
     liveUrl: "#",
     githubUrl: null,
-    featured: true,
+    featured: false,
   },
 ];
 
