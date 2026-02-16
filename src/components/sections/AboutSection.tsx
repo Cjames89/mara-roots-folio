@@ -51,7 +51,7 @@ export const AboutSection = () => {
               </p>
               
               <p className="text-lg leading-relaxed text-muted-foreground">
-                His work involves deep research into **AI data center frameworks** and **Blockchain economics**, 
+                His work involves deep research into AI data center frameworks and Blockchain economics, 
                 specifically focusing on how Bitcoin mining and GPU compute can optimize global energy grids. 
                 He is dedicated to exploring how these two technologies can coexist to reshape industrial efficiency.
               </p>
