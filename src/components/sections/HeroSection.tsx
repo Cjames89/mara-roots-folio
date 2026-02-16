@@ -66,9 +66,15 @@ export const HeroSection = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
           >
-            <Button size="lg" className="glow group">
-              <FileText className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
-              Download Resume
+           <Button size="lg" className="glow group" asChild>
+           <a 
+            href="/resume.pdf" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            >
+            <FileText className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
+            Download Resume
+            </a>
             </Button>
             <a href="#experience">
             <Button size="lg" variant="outline" className="border-primary/50 hover:border-primary hover:bg-primary/10">
