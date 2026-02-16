@@ -14,7 +14,7 @@ const projects = [
     impact: "Improved sovereign data climate with interface for secure compute.",
     image: "/placeholder.svg",
     tags: ["TypeScript", "React", "APIs"],
-    liveUrl: "https://cjames89.github.io/sovereign-compute-marketplace/#/marketplace",
+    liveUrl: "https://cjames89.github.io/sovereign-compute-marketplace",
     githubUrl: "https://github.com/Cjames89/sovereign-compute-marketplace.git",
     featured: true,
   },
