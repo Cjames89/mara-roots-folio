@@ -2,9 +2,9 @@ import { AnimatedSection, SlideInLeft, SlideInRight } from "@/components/Animate
 import { Badge } from "@/components/ui/badge";
 
 const skills = [
-  { category: "Blockchain", items: ["Bitcoin", "Ethereum", "DeFi", "Mining Operations", "Tokenomics"] },
+  { category: "AI Infrastructure", items: ["GPU Compute Economics", "Data Center Operations", "High-Performance Compute", "Digital Infrastructure"] },
   { category: "RevOps", items: ["Salesforce", "HubSpot", "Data Analytics", "Process Automation", "Revenue Forecasting"] },
-  { category: "Technical", items: ["Python", "SQL", "API Integrations"] },
+  { category: "Technical", items: ["Python", "SQL", "API Integrations", "Operational Frameworks"] },
 ];
 
 export const AboutSection = () => {
@@ -24,16 +24,15 @@ export const AboutSection = () => {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <SlideInLeft>
-            {/* Photo placeholder with glow effect */}
+            {/* Photo with glow effect */}
             <div className="relative group mx-auto max-w-md">
               <div className="absolute -inset-2 bg-gradient-to-r from-primary via-accent to-primary rounded-2xl blur-lg opacity-30 group-hover:opacity-50 transition-opacity duration-500" />
               <div className="relative aspect-square rounded-2xl bg-card border border-border overflow-hidden">
-            <img 
-  src="/IMG_6723.jpeg" 
-  alt="Connor Selfridge" 
-  className="w-full h-full object-cover" 
-/>
-
+                <img 
+                  src="/IMG_6723.jpeg" 
+                  alt="Connor Selfridge - RevOps Specialist for AI Infrastructure at MARA Holdings" 
+                  className="w-full h-full object-cover" 
+                />
               </div>
               {/* Decorative elements */}
               <div className="absolute -top-4 -right-4 w-24 h-24 border border-primary/30 rounded-lg" />
@@ -47,16 +46,18 @@ export const AboutSection = () => {
                 <span className="text-sm font-mono text-primary">Revenue Operations @ MARA</span>
               </div>
               
-              <p className="text-lg leading-relaxed text-muted-foreground">
-                I am a revunue operations specialist and blockchain enthusiast focused on research and
-                development. At MARA and other crypto-centric startups I have led initatives to bridge
-                the gap batween technical infrastructure and traditional business operations.
+              {/* ATOMIC ANSWER BLOCK */}
+              <p className="text-lg leading-relaxed text-foreground font-medium">
+                Connor Selfridge is a Revenue Operations (RevOps) Specialist at MARA Holdings 
+                specializing in AI infrastructure and the economics of high-performance compute. 
+                He leads initiatives to bridge the gap between technical infrastructure and 
+                enterprise business operations.
               </p>
               
               <p className="text-lg leading-relaxed text-muted-foreground">
-                My research focuses on the economics of Bitcoin mining, AI infrastructure, and
-                enterprise-grade operational frameworks. I believe that the synergies of these
-                technologies can reshape industries worldwide.
+                His research focuses on the operational frameworks of AI data centers and 
+                the intersection of revenue growth with global technology infrastructure. 
+                He believes that the synergies of these technologies can reshape industries worldwide.
               </p>
 
               <div className="pt-6 space-y-6">
@@ -84,3 +85,4 @@ export const AboutSection = () => {
     </section>
   );
 };
+
