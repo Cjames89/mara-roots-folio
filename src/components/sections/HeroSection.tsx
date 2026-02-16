@@ -110,21 +110,23 @@ export const HeroSection = () => {
         </div>
       </div>
 
-      {/* Scroll indicator */}
+   {/* Scroll indicator */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1 }}
         className="absolute bottom-8 left-1/2 -translate-x-1/2"
       >
-        <motion.div
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 1.5, repeat: Infinity }}
-          className="flex flex-col items-center gap-2 text-muted-foreground"
-        >
-          <span className="text-xs font-mono">SCROLL</span>
-          <ArrowDown className="h-4 w-4" />
-        </motion.div>
+        <a href="#about" className="cursor-pointer group"> {/* 👈 Wrap in anchor link */}
+          <motion.div
+            animate={{ y: [0, 10, 0] }}
+            transition={{ duration: 1.5, repeat: Infinity }}
+            className="flex flex-col items-center gap-2 text-muted-foreground group-hover:text-primary transition-colors"
+          >
+            <span className="text-xs font-mono">SCROLL</span>
+            <ArrowDown className="h-4 w-4" />
+          </motion.div>
+        </a>
       </motion.div>
     </section>
   );
