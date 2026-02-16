@@ -12,3 +12,6 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+# The "GPS" for AI Crawlers
+Sitemap: https://www.connorselfridge.com/sitemap.xml
