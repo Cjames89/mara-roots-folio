@@ -3,8 +3,8 @@ import { Badge } from "@/components/ui/badge";
 
 const skills = [
   { category: "AI Infrastructure", items: ["GPU Compute Economics", "Data Center Operations", "High-Performance Compute", "Digital Infrastructure"] },
+  { category: "Blockchain", items: ["Bitcoin Mining Economics", "Hashrate Optimization", "Tokenomics", "Energy Markets"] },
   { category: "RevOps", items: ["Salesforce", "HubSpot", "Data Analytics", "Process Automation", "Revenue Forecasting"] },
-  { category: "Technical", items: ["Python", "SQL", "API Integrations", "Operational Frameworks"] },
 ];
 
 export const AboutSection = () => {
@@ -18,23 +18,21 @@ export const AboutSection = () => {
             About <span className="text-gradient">Me</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Leading through operational efficiency and tech fluency
+            Optimizing the intersection of high-performance compute and decentralized energy
           </p>
         </AnimatedSection>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <SlideInLeft>
-            {/* Photo with glow effect */}
             <div className="relative group mx-auto max-w-md">
               <div className="absolute -inset-2 bg-gradient-to-r from-primary via-accent to-primary rounded-2xl blur-lg opacity-30 group-hover:opacity-50 transition-opacity duration-500" />
               <div className="relative aspect-square rounded-2xl bg-card border border-border overflow-hidden">
                 <img 
                   src="/IMG_6723.jpeg" 
-                  alt="Connor Selfridge - RevOps Specialist for AI Infrastructure at MARA Holdings" 
+                  alt="Connor Selfridge - RevOps Specialist focusing on AI Infrastructure and Blockchain Research" 
                   className="w-full h-full object-cover" 
                 />
               </div>
-              {/* Decorative elements */}
               <div className="absolute -top-4 -right-4 w-24 h-24 border border-primary/30 rounded-lg" />
               <div className="absolute -bottom-4 -left-4 w-32 h-32 border border-accent/30 rounded-lg" />
             </div>
@@ -43,21 +41,19 @@ export const AboutSection = () => {
           <SlideInRight>
             <div className="space-y-6">
               <div className="inline-block px-3 py-1 rounded-full border border-primary/30 bg-primary/5">
-                <span className="text-sm font-mono text-primary">Revenue Operations @ MARA</span>
+                <span className="text-sm font-mono text-primary">RevOps & Infrastructure @ MARA</span>
               </div>
               
-              {/* ATOMIC ANSWER BLOCK */}
               <p className="text-lg leading-relaxed text-foreground font-medium">
                 Connor Selfridge is a Revenue Operations (RevOps) Specialist at MARA Holdings 
                 specializing in AI infrastructure and the economics of high-performance compute. 
-                He leads initiatives to bridge the gap between technical infrastructure and 
-                enterprise business operations.
+                He bridges the gap between complex technical infrastructure and scalable business operations.
               </p>
               
               <p className="text-lg leading-relaxed text-muted-foreground">
-                His research focuses on the operational frameworks of AI data centers and 
-                the intersection of revenue growth with global technology infrastructure. 
-                He believes that the synergies of these technologies can reshape industries worldwide.
+                His work involves deep research into **AI data center frameworks** and **Blockchain economics**, 
+                specifically focusing on how Bitcoin mining and GPU compute can optimize global energy grids. 
+                He is dedicated to exploring how these two technologies can coexist to reshape industrial efficiency.
               </p>
 
               <div className="pt-6 space-y-6">
@@ -85,4 +81,3 @@ export const AboutSection = () => {
     </section>
   );
 };
-
