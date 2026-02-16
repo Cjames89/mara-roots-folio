@@ -70,10 +70,12 @@ export const HeroSection = () => {
               <FileText className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
               Download Resume
             </Button>
+            <a href="#experience">
             <Button size="lg" variant="outline" className="border-primary/50 hover:border-primary hover:bg-primary/10">
               View My Work
               <ArrowDown className="ml-2 h-5 w-5" />
             </Button>
+            </a>
           </motion.div>
 
           <motion.div
