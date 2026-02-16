@@ -80,10 +80,16 @@ export const ContactSection = () => {
               <p className="text-muted-foreground mb-6">
                 Get a comprehensive overview of my experience and skills
               </p>
-              <Button size="lg" className="glow group">
-                <FileText className="h-5 w-5 mr-2 group-hover:scale-110 transition-transform" />
-                Download Resume (PDF)
-              </Button>
+             <Button size="lg" className="glow group" asChild>
+  <a 
+    href="/resume.pdf" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <FileText className="h-5 w-5 mr-2 group-hover:scale-110 transition-transform" />
+    Download Resume (PDF)
+  </a>
+</Button>
             </div>
           </AnimatedSection>
         </AnimatedSection>
