@@ -23,10 +23,16 @@ export const Footer = () => {
             className="text-sm text-muted-foreground"
           >
             <a href="https://connorselfridge.substack.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
-              Read my Substack
+              Substack
             </a>
             <span className="mx-2">·</span>
-            Built with <span className="text-primary">♥</span>
+            <a href="https://www.linkedin.com/in/connor-selfridge/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+              LinkedIn
+            </a>
+            <span className="mx-2">·</span>
+            <a href="https://x.com/ConnorSelfridge" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+              X
+            </a>
           </motion.p>
         </div>
       </div>

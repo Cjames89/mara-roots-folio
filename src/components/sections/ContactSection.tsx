@@ -43,13 +43,13 @@ export const ContactSection = () => {
           </span>
           
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Let's Build Something{" "}
-            <span className="text-gradient">Together</span>
+            Let's{" "}
+            <span className="text-gradient">Connect</span>
           </h2>
-          
+
           <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
-            Whether you're interested in blockchain research, RevOps optimization, or just want to connect — 
-            I'm always open to new conversations and opportunities.
+            I'm always interested in talking crypto infrastructure, revenue operations, or what's next
+            in the digital asset economy. If you're building something interesting, reach out.
           </p>
 
           {/* Social links */}

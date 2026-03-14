@@ -36,7 +36,7 @@ export const HeroSection = () => {
             className="mb-4"
           >
             <span className="inline-block px-4 py-2 rounded-full border border-primary/30 bg-primary/5 text-primary text-sm font-mono">
-              Revenue Operations · AI Infrastructure · Blockchain
+              Operating at the frontier of digital asset infrastructure
             </span>
           </motion.div>
 
@@ -56,8 +56,8 @@ export const HeroSection = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto"
           >
-            Revenue Operations at MARA Holdings. Building at the intersection of Bitcoin mining,
-            AI infrastructure, and the economics of high-performance compute.
+            Revenue Operations at MARA Holdings — one of the world's largest Bitcoin miners.
+            I turn complex infrastructure economics into scalable business operations.
           </motion.p>
 
           <motion.div

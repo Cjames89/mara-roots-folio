@@ -20,10 +20,10 @@ const projects = [
   },
   {
     title: "Commodities Trading Platform",
-    description: "Machine learning model for analyzing commodities futures trading and hedging strategies for mining companies.",
-    problem: "Volatile revenue projections from metallurgical coal miners.",
-    solution: "Developed upon ML model to create futures hedging strategy.",
-    impact: "Partner reduced revenue volatility by ~25% through systematic futures hedging.",
+    description: "ML-powered commodities trading model for futures hedging strategies tailored to mining company revenue cycles.",
+    problem: "Mining companies face highly volatile revenue due to commodity price swings and production variability.",
+    solution: "Built a machine learning model incorporating futures curves, production data, and macro variables to generate hedging signals.",
+    impact: "Partner reduced revenue volatility by ~25% through systematic, data-driven futures hedging.",
     image: "/placeholder.svg",
     tags: ["Python", "SQL", "PowerBI"],
     liveUrl: "#",
@@ -32,10 +32,10 @@ const projects = [
   },
   {
     title: "DeFi Portfolio Tracker",
-    description: "Personal project tracking DeFi investments across multiple protocols with yield optimization recommendations.",
-    problem: "Managing positions across multiple DeFi platforms was complex.",
-    solution: "Created unified dashboard with automated yield calculations.",
-    impact: "Simplified portfolio management and improved yield by 15%.",
+    description: "Cross-protocol DeFi portfolio tracker with automated yield optimization and position management.",
+    problem: "Managing positions across multiple DeFi protocols was fragmented and error-prone.",
+    solution: "Built a unified dashboard pulling on-chain data across protocols with automated yield calculations.",
+    impact: "Simplified active portfolio management and improved annualized yield by 15%.",
     image: "/placeholder.svg",
     tags: ["Web3.js", "React", "Node.js", "Ethers"],
     liveUrl: "#",
@@ -44,10 +44,10 @@ const projects = [
   },
   {
  title: "Revenue Forecasting Model",
-    description: "Machine learning model for predicting mining revenue based on hash rate, difficulty adjustments, and market conditions.",
-    problem: "Revenue predictions were manual and often inaccurate.",
-    solution: "Developed ML model incorporating multiple market variables.",
-    impact: "Improved forecast accuracy by 40% quarter-over-quarter.",
+    description: "Bitcoin mining revenue forecasting model incorporating hashrate, difficulty adjustments, BTC price, and energy cost variables.",
+    problem: "Mining revenue forecasts were manual, slow, and missed key market dynamics.",
+    solution: "Trained an ML model on historical mining data, difficulty epochs, and spot BTC price to produce rolling revenue projections.",
+    impact: "Improved forecast accuracy by 40% quarter-over-quarter, enabling better treasury and capex planning.",
     image: "/placeholder.svg",
     tags: ["Python", "TensorFlow", "SQL", "Tableau"],
     liveUrl: "#",
@@ -67,7 +67,7 @@ export const ProjectsSection = () => {
             Featured <span className="text-gradient">Projects</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Turning complex problems into scalable solutions
+            Hands-on work at the intersection of crypto infrastructure, data, and operations
           </p>
         </AnimatedSection>
 

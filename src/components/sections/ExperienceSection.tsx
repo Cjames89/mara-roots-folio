@@ -5,41 +5,41 @@ import { Badge } from "@/components/ui/badge";
 const experiences = [
   {
     title: "Revenue Operations",
-    company: "MARA (Marathon Digital Holdings)",
+    company: "MARA Holdings",
     period: "2025 - Present",
-    description: "Leading revenue operations and strategy at one of the largest publicly traded Bitcoin mining companies. Building data-driven processes and automation to scale commercial operations.",
+    description: "Driving revenue operations at one of the world's largest Bitcoin mining companies — 50+ EH/s of hashrate, publicly traded on NASDAQ. Building the systems and frameworks that connect infrastructure economics to commercial outcomes.",
     achievements: [
-      "Streamlined GTM workflows and CRM processes to improve sales cycle efficiency",
-      "Delivered key performance insights to senior leadership and external stakeholders",
-      "Led cross-functional initiatives bridging operations, finance, and business development",
+      "Designed and implemented GTM workflows and CRM automation across the revenue org",
+      "Built reporting infrastructure to surface hashrate economics and margin insights for leadership",
+      "Led cross-functional alignment between business development, finance, and operations",
     ],
-    tags: ["AI Infrastructure", "RevOps", "Data Analytics"],
+    tags: ["Bitcoin Infrastructure", "RevOps", "Data Analytics", "GTM Strategy"],
     current: true,
   },
   {
-    title: "Blockchain Research",
+    title: "Blockchain Research Analyst",
     company: "Shield3",
     period: "2024",
-    description: "Conducted in-depth research on DeFi protocols, on-chain security, and tokenomics for a Web3 security startup. Published analysis on emerging blockchain trends and smart contract risk.",
+    description: "Researched on-chain security, DeFi protocol risk, and tokenomics for a Web3 security startup focused on transaction-level threat detection. Delivered institutional-grade analysis used in investment decisions.",
     achievements: [
-      "Authored 5+ research reports on DeFi protocols and on-chain security vulnerabilities",
-      "Developed proprietary analytics frameworks used by key institutional stakeholders",
-      "Prepared and presented investment pitch decks for 10+ VC portfolio opportunities",
+      "Authored 5+ research reports covering DeFi protocols, smart contract vulnerabilities, and exploit vectors",
+      "Developed analytics frameworks to evaluate protocol risk for institutional partners",
+      "Built and presented pitch materials for 10+ VC portfolio investment opportunities",
     ],
-    tags: ["DeFi", "Research", "Tokenomics"],
+    tags: ["On-Chain Security", "DeFi", "Tokenomics", "Protocol Research"],
     current: false,
   },
   {
-    title: "Stablecoin Development",
+    title: "Operations & Business Development",
     company: "Jewel Bank",
     period: "2023",
-    description: "Supported operational and technical buildout for a fintech startup developing stablecoin infrastructure for regulated banking. Focused on systems integration and business development.",
+    description: "Helped build operational and commercial foundations for a fintech startup developing stablecoin rails for regulated banking. Worked across product integration, business development, and executive reporting.",
     achievements: [
-      "Implemented and validated stablecoin integration with core banking platform",
-      "Grew customer pipeline by 25% through outbound strategy and partnerships",
-      "Built analytics dashboards to track KPIs for the executive team",
+      "Validated stablecoin integration with core banking infrastructure end-to-end",
+      "Grew the commercial pipeline by 25% through targeted outbound and partnership development",
+      "Designed executive dashboards to track growth KPIs and product milestones",
     ],
-    tags: ["Operations", "Automation", "Analytics"],
+    tags: ["Stablecoins", "Fintech", "Business Development", "Operations"],
     current: false,
   },
 ];
@@ -55,7 +55,7 @@ export const ExperienceSection = () => {
             Professional <span className="text-gradient">Experience</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            A journey through innovation and operational excellence
+            From stablecoin rails to Bitcoin mining infrastructure — building at the edges of the crypto economy
           </p>
         </AnimatedSection>
 

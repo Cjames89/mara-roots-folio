@@ -19,22 +19,22 @@ interface BlogPost {
 // Demo posts for when RSS is not configured or fails
 const demoPosts: BlogPost[] = [
   {
-    title: "The Future of Bitcoin Mining: A 2024 Perspective",
-    link: "#",
-    pubDate: "2024-01-15",
-    description: "An exploration of emerging trends in Bitcoin mining, from sustainable energy initiatives to next-generation ASIC technology.",
+    title: "Hash Economics: How Bitcoin Mining Shapes the Energy Grid",
+    link: "https://connorselfridge.substack.com",
+    pubDate: "2025-02-10",
+    description: "A look at how large-scale Bitcoin miners are becoming flexible energy buyers — and why that changes the economics of renewable buildout.",
   },
   {
-    title: "Building Scalable RevOps in Web3",
-    link: "#",
-    pubDate: "2024-01-08",
-    description: "How traditional revenue operations principles adapt—and transform—in the decentralized world.",
+    title: "GPU Compute as a Financial Instrument",
+    link: "https://connorselfridge.substack.com",
+    pubDate: "2025-01-20",
+    description: "AI demand has made GPU capacity a tradeable asset class. Here's how mining companies are positioning themselves at the intersection of HPC and Bitcoin.",
   },
   {
-    title: "Understanding the Halving: Economic Implications",
-    link: "#",
-    pubDate: "2024-01-01",
-    description: "A deep dive into Bitcoin's halving mechanism and its far-reaching effects on miners, investors, and the broader ecosystem.",
+    title: "RevOps in Digital Asset Infrastructure",
+    link: "https://connorselfridge.substack.com",
+    pubDate: "2025-01-05",
+    description: "What it actually looks like to build revenue operations at a Bitcoin mining company — the systems, the data, and the unique challenges of operating at protocol scale.",
   },
 ];
 
@@ -100,7 +100,7 @@ export const BlogSection = () => {
             Latest <span className="text-gradient">Articles</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Thoughts on blockchain, operations, and building the future of finance
+            Writing on Bitcoin infrastructure, digital asset economics, and the operational layer of crypto
           </p>
         </AnimatedSection>
 
@@ -157,7 +157,7 @@ export const BlogSection = () => {
               <div className="text-center p-8 rounded-2xl bg-gradient-to-r from-primary/10 via-accent/10 to-primary/10 border border-border">
                 <h3 className="text-xl font-bold mb-2">Stay Updated</h3>
                 <p className="text-muted-foreground mb-6 max-w-md mx-auto">
-                  Subscribe to my Substack for weekly insights on blockchain, RevOps, and the future of decentralized systems.
+                  Subscribe for writing on Bitcoin mining economics, AI infrastructure, and operating in the digital asset industry.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button className="glow" asChild>
