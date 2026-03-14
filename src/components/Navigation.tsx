@@ -51,7 +51,7 @@ export const Navigation = () => {
             </a>
           ))}
           <Button size="sm" className="glow-sm" asChild>
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+            <a href="/resume.pdf" download="Connor_Selfridge_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
           </Button>
         </div>
 
@@ -75,7 +75,7 @@ export const Navigation = () => {
                 </a>
               ))}
               <Button className="glow-sm mt-4" asChild>
-                <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+                <a href="/resume.pdf" download="Connor_Selfridge_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
               </Button>
             </div>
           </SheetContent>

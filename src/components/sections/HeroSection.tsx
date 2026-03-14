@@ -67,9 +67,10 @@ export const HeroSection = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
           >
            <Button size="lg" className="glow group" asChild>
-           <a 
-            href="/resume.pdf" 
-            target="_blank" 
+           <a
+            href="/resume.pdf"
+            download="Connor_Selfridge_Resume.pdf"
+            target="_blank"
             rel="noopener noreferrer"
             >
             <FileText className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />

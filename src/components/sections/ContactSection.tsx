@@ -81,9 +81,10 @@ export const ContactSection = () => {
                 Get a comprehensive overview of my experience and skills
               </p>
              <Button size="lg" className="glow group" asChild>
-  <a 
-    href="/resume.pdf" 
-    target="_blank" 
+  <a
+    href="/resume.pdf"
+    download="Connor_Selfridge_Resume.pdf"
+    target="_blank"
     rel="noopener noreferrer"
   >
     <FileText className="h-5 w-5 mr-2 group-hover:scale-110 transition-transform" />
