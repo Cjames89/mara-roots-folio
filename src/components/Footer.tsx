@@ -13,7 +13,7 @@ export const Footer = () => {
             viewport={{ once: true }}
             className="text-sm text-muted-foreground font-mono"
           >
-            © {currentYear} Portfolio. Built with passion for blockchain.
+            © {currentYear} Connor Selfridge. All rights reserved.
           </motion.p>
           
           <motion.p
@@ -22,8 +22,11 @@ export const Footer = () => {
             viewport={{ once: true }}
             className="text-sm text-muted-foreground"
           >
-            Designed & Developed with{" "}
-            <span className="text-primary">♥</span>
+            <a href="https://connorselfridge.substack.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+              Read my Substack
+            </a>
+            <span className="mx-2">·</span>
+            Built with <span className="text-primary">♥</span>
           </motion.p>
         </div>
       </div>

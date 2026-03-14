@@ -36,7 +36,7 @@ export const HeroSection = () => {
             className="mb-4"
           >
             <span className="inline-block px-4 py-2 rounded-full border border-primary/30 bg-primary/5 text-primary text-sm font-mono">
-              Blockchain Research & RevOps
+              Revenue Operations · AI Infrastructure · Blockchain
             </span>
           </motion.div>
 
@@ -56,8 +56,8 @@ export const HeroSection = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto"
           >
-            Revenue Operations at MARA. Exploring the Intersection of Blockchain Technology, 
-           Artifical Intelligence and High Performance Computing.
+            Revenue Operations at MARA Holdings. Building at the intersection of Bitcoin mining,
+            AI infrastructure, and the economics of high-performance compute.
           </motion.p>
 
           <motion.div

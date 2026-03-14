@@ -45,15 +45,16 @@ export const AboutSection = () => {
               </div>
               
               <p className="text-lg leading-relaxed text-foreground font-medium">
-                Connor Selfridge is a Revenue Operations (RevOps) Specialist at MARA Holdings 
-                specializing in AI infrastructure and the economics of high-performance compute. 
-                He bridges the gap between complex technical infrastructure and scalable business operations.
+                Connor Selfridge is a Revenue Operations specialist at MARA Holdings — one of the
+                world's largest publicly traded Bitcoin mining companies. He bridges the gap between
+                complex technical infrastructure and scalable commercial operations.
               </p>
-              
+
               <p className="text-lg leading-relaxed text-muted-foreground">
-                His work involves deep research into AI data center frameworks and Blockchain economics, 
-                specifically focusing on how Bitcoin mining and GPU compute can optimize global energy grids. 
-                He is dedicated to exploring how these two technologies can coexist to reshape industrial efficiency.
+                His work spans deep research into AI data center economics and blockchain infrastructure,
+                with a focus on how Bitcoin mining and GPU compute can be leveraged to optimize global
+                energy grids. He's passionate about the convergence of these technologies and their
+                potential to reshape industrial efficiency at scale.
               </p>
 
               <div className="pt-6 space-y-6">

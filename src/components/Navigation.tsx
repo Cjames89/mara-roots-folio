@@ -50,8 +50,8 @@ export const Navigation = () => {
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
             </a>
           ))}
-          <Button size="sm" className="glow-sm">
-            Resume
+          <Button size="sm" className="glow-sm" asChild>
+            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
           </Button>
         </div>
 
@@ -74,7 +74,9 @@ export const Navigation = () => {
                   {link.label}
                 </a>
               ))}
-              <Button className="glow-sm mt-4">Resume</Button>
+              <Button className="glow-sm mt-4" asChild>
+                <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+              </Button>
             </div>
           </SheetContent>
         </Sheet>

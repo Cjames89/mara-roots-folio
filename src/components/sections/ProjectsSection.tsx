@@ -8,10 +8,10 @@ import { ExternalLink, Github, Layers } from "lucide-react";
 const projects = [
   {
     title: "Sovereign GPU as a Service Dashboard",
-    description: "Data sovereingty focused GPU rental platform with leaderboard tracking and data security scores based on compute providers.",
-    problem: "GPU Rental services lack data security and protection features without proper analysis of how GPU providers utilize data.",
-    solution: "Built a comprehensive dashboard integrating sovereign GPU rental sources.",
-    impact: "Improved sovereign data climate with interface for secure compute.",
+    description: "Data sovereignty-focused GPU rental platform with leaderboard tracking and security scores across compute providers.",
+    problem: "GPU rental services lack transparency into how providers handle customer data and workloads.",
+    solution: "Built a dashboard aggregating sovereign GPU sources with security ratings and compliance scoring.",
+    impact: "Created a clear interface for researchers and enterprises to identify trustworthy, secure compute options.",
     image: "/placeholder.svg",
     tags: ["TypeScript", "React", "APIs"],
     liveUrl: "https://cjames89.github.io/sovereign-compute-marketplace",
@@ -23,7 +23,7 @@ const projects = [
     description: "Machine learning model for analyzing commodities futures trading and hedging strategies for mining companies.",
     problem: "Volatile revenue projections from metallurgical coal miners.",
     solution: "Developed upon ML model to create futures hedging strategy.",
-    impact: "Partner saved roughly 25% on volatiloty spikes through hedging",
+    impact: "Partner reduced revenue volatility by ~25% through systematic futures hedging.",
     image: "/placeholder.svg",
     tags: ["Python", "SQL", "PowerBI"],
     liveUrl: "#",
