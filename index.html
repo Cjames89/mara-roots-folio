@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Connor Selfridge</title>
+  <meta name="description" content="Connor Selfridge — Revenue Operations and macro analysis at the intersection of Bitcoin mining, energy markets, and digital asset infrastructure. Currently at MARA Holdings." />
+  <meta name="author" content="Connor Selfridge" />
+  <link rel="canonical" href="https://www.connorselfridge.com/" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.connorselfridge.com/" />
+  <meta property="og:title" content="Connor Selfridge" />
+  <meta property="og:description" content="Revenue Operations and macro analysis at the intersection of Bitcoin mining, energy markets, and digital asset infrastructure. Currently at MARA Holdings." />
+  <meta property="og:image" content="https://www.connorselfridge.com/headshot.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@cjsfe" />
+  <meta name="twitter:creator" content="@cjsfe" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500&display=swap" />
+
+  <style>
+    :root {
+      --bg: #FAF8F5;
+      --text: #1A1A1A;
+      --muted: #6B7280;
+      --accent: #1B2A41;
+      --rule: #E5E5E5;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 120ms ease;
+    }
+
+    a:hover { border-bottom-color: var(--accent); }
+
+    /* ---------- Nav ---------- */
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: var(--bg);
+      padding: 20px 32px;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .nav .brand {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 20px;
+      color: var(--text);
+      border-bottom: none;
+    }
+
+    .nav .brand:hover { border-bottom: none; color: var(--accent); }
+
+    .nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 24px;
+      font-size: 15px;
+    }
+
+    .nav ul a {
+      color: var(--text);
+    }
+
+    .nav ul a:hover { color: var(--accent); }
+
+    @media (max-width: 640px) {
+      .nav ul { display: none; }
+      .nav { padding: 16px 24px; }
+    }
+
+    /* ---------- Main layout ---------- */
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 32px 24px;
+    }
+
+    @media (max-width: 640px) {
+      main { padding: 24px 24px 16px; }
+    }
+
+    section {
+      padding: 64px 0;
+      border-top: 1px solid var(--rule);
+    }
+
+    section:first-of-type { border-top: none; padding-top: 16px; }
+
+    @media (max-width: 640px) {
+      section { padding: 48px 0; }
+    }
+
+    h1 {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 48px;
+      font-weight: 500;
+      line-height: 1.1;
+      margin: 0 0 16px;
+      letter-spacing: -0.01em;
+    }
+
+    h2 {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 28px;
+      font-weight: 500;
+      margin: 0 0 24px;
+      letter-spacing: -0.005em;
+    }
+
+    @media (max-width: 640px) {
+      h1 { font-size: 32px; }
+      h2 { font-size: 24px; }
+    }
+
+    p { margin: 0 0 16px; }
+
+    .muted { color: var(--muted); }
+
+    /* ---------- Hero ---------- */
+    .hero {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 32px;
+    }
+
+    .hero-text { flex: 1; min-width: 0; }
+
+    .hero-text .lede {
+      font-size: 17px;
+      max-width: 62ch;
+      margin-bottom: 24px;
+    }
+
+    .hero-links {
+      font-size: 15px;
+      color: var(--muted);
+    }
+
+    .hero-links a { color: var(--accent); }
+
+    .hero-links .sep {
+      color: var(--muted);
+      margin: 0 10px;
+    }
+
+    .headshot {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 640px) {
+      .hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+      }
+      .hero-text { width: 100%; }
+      .headshot { order: -1; align-self: center; }
+    }
+
+    /* ---------- Writing ---------- */
+    .writing-intro {
+      margin-bottom: 32px;
+      color: var(--text);
+    }
+
+    .article {
+      margin-bottom: 28px;
+    }
+
+    .article-title {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-style: italic;
+      font-size: 20px;
+      line-height: 1.3;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .article-desc {
+      margin: 0 0 4px;
+      max-width: 62ch;
+    }
+
+    .article-date {
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .writing-more {
+      margin-top: 32px;
+      font-size: 15px;
+    }
+
+    /* ---------- Experience ---------- */
+    .role {
+      margin-bottom: 40px;
+    }
+
+    .role:last-child { margin-bottom: 0; }
+
+    .role-title {
+      font-size: 17px;
+      font-weight: 500;
+      margin: 0 0 2px;
+    }
+
+    .role-dates {
+      font-size: 14px;
+      color: var(--muted);
+      margin: 0 0 12px;
+    }
+
+    .role-points {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .role-points li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 10px;
+      max-width: 62ch;
+    }
+
+    .role-points li::before {
+      content: "—";
+      position: absolute;
+      left: 0;
+      color: var(--muted);
+    }
+
+    /* ---------- Education ---------- */
+    .edu { margin-bottom: 32px; }
+    .edu:last-child { margin-bottom: 0; }
+
+    .edu-title {
+      font-size: 17px;
+      font-weight: 500;
+      margin: 0 0 2px;
+    }
+
+    .edu-dates {
+      font-size: 14px;
+      color: var(--muted);
+      margin: 0 0 6px;
+    }
+
+    .edu-detail { margin: 0; }
+
+    /* ---------- Projects ---------- */
+    .project { margin-bottom: 40px; }
+    .project:last-child { margin-bottom: 0; }
+
+    .project-title {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 22px;
+      font-weight: 500;
+      margin: 0 0 10px;
+    }
+
+    .project-desc {
+      max-width: 62ch;
+      margin: 0 0 8px;
+    }
+
+    .project-tools {
+      color: var(--muted);
+      font-size: 15px;
+      margin: 0 0 8px;
+    }
+
+    .project-links {
+      font-size: 15px;
+    }
+
+    .project-links .sep { color: var(--muted); margin: 0 8px; }
+
+    /* ---------- Contact ---------- */
+    .contact-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 20px;
+    }
+
+    .contact-list li { margin-bottom: 6px; }
+
+    .contact-list .label {
+      color: var(--muted);
+      display: inline-block;
+      width: 84px;
+    }
+
+    .contact-note {
+      max-width: 62ch;
+      margin-top: 20px;
+    }
+
+    /* ---------- Footer ---------- */
+    footer {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px;
+      border-top: 1px solid var(--rule);
+      text-align: center;
+      font-size: 14px;
+      color: var(--muted);
+      padding-bottom: 64px;
+    }
+
+    footer a { color: var(--accent); }
+
+    footer .sep { margin: 0 10px; color: var(--muted); }
+
+    @media (max-width: 640px) {
+      footer { padding: 24px 24px 48px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav" aria-label="Primary">
+  <a class="brand" href="#top">Connor Selfridge</a>
+  <ul>
+    <li><a href="#writing">Writing</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<main id="top">
+
+  <section class="hero" aria-label="Introduction">
+    <div class="hero-text">
+      <h1>Connor Selfridge</h1>
+      <p class="lede">Revenue operations and macro analysis at the intersection of Bitcoin mining, energy markets, and digital asset infrastructure. Currently at MARA Holdings.</p>
+      <p class="hero-links">
+        <a href="https://www.linkedin.com/in/connorselfridge">LinkedIn</a><span class="sep">·</span>
+        <a href="https://x.com/cjsfe">X</a><span class="sep">·</span>
+        <a href="https://cjsfe.substack.com">Substack</a><span class="sep">·</span>
+        <a href="mailto:hello@connorselfridge.com">Email</a>
+      </p>
+    </div>
+    <img class="headshot" src="/headshot.jpg" alt="Connor Selfridge" width="120" height="120" />
+  </section>
+
+  <section id="writing">
+    <h2>Writing</h2>
+    <p class="writing-intro">Macro analysis on Bitcoin, gold, silver, and AI. Published on Substack.</p>
+
+    <div class="article">
+      <a class="article-title" href="https://open.substack.com/pub/cjsfe/p/bitcoin-vs-gold-vs-silver-the-fight">Bitcoin vs Gold vs Silver: The Fight for Store-of-Value Status</a>
+      <p class="article-desc">Comparative analysis of risk-adjusted returns, correlation structures, and sovereign demand dynamics across store-of-value assets in 2024–2025.</p>
+      <p class="article-date">2025</p>
+    </div>
+
+    <div class="article">
+      <a class="article-title" href="#">[PLACEHOLDER] Article Title Two</a>
+      <p class="article-desc">[PLACEHOLDER] One-line description of the second article — topic, angle, and takeaway in a single sentence.</p>
+      <p class="article-date">[PLACEHOLDER date]</p>
+    </div>
+
+    <div class="article">
+      <a class="article-title" href="#">[PLACEHOLDER] Article Title Three</a>
+      <p class="article-desc">[PLACEHOLDER] One-line description of the third article — topic, angle, and takeaway in a single sentence.</p>
+      <p class="article-date">[PLACEHOLDER date]</p>
+    </div>
+
+    <p class="writing-more"><a href="https://cjsfe.substack.com">Read more on Substack →</a></p>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+
+    <div class="role">
+      <p class="role-title">Revenue Operations Specialist — <a href="https://www.mara.com">MARA Holdings</a></p>
+      <p class="role-dates">2025 – Present</p>
+      <ul class="role-points">
+        <li>Designed and implemented GTM workflows and CRM automation across the revenue organization for Exaion, MARA's majority-owned Sovereign AI subsidiary.</li>
+        <li>Built reporting infrastructure surfacing hashrate economics, deal forecasting, and margin insights for leadership.</li>
+        <li>Led cross-functional alignment between business development, finance, and operations teams.</li>
+      </ul>
+    </div>
+
+    <div class="role">
+      <p class="role-title">Blockchain Research Analyst — <a href="https://shield3.com">Shield3</a></p>
+      <p class="role-dates">2024</p>
+      <ul class="role-points">
+        <li>Authored 5+ research reports on DeFi protocol risk, smart contract vulnerabilities, and exploit vectors for institutional clients.</li>
+        <li>Developed analytics frameworks to evaluate protocol risk for institutional partners.</li>
+        <li>Built and presented pitch materials for 10+ VC portfolio investment opportunities.</li>
+      </ul>
+    </div>
+
+    <div class="role">
+      <p class="role-title">Operations &amp; Business Development — <a href="https://www.jewel.bank">Jewel Bank</a></p>
+      <p class="role-dates">2023</p>
+      <ul class="role-points">
+        <li>Validated stablecoin integration with core banking infrastructure end-to-end.</li>
+        <li>Grew commercial pipeline by 25% through targeted outbound and partnership development.</li>
+        <li>Designed executive dashboards tracking growth KPIs and product milestones.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+
+    <div class="edu">
+      <p class="edu-title">MS Finance &amp; Analytics — Santa Clara University</p>
+      <p class="edu-dates">2025 – 2026</p>
+      <p class="edu-detail">Leavey School of Business.</p>
+    </div>
+
+    <div class="edu">
+      <p class="edu-title">BS Economics, cum laude — Santa Clara University</p>
+      <p class="edu-dates">2020 – 2024</p>
+      <p class="edu-detail">Founded Blockchain@SCU, the university's blockchain club.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <p class="project-title">Commodities Revenue Hedging Model</p>
+      <p class="project-desc">ML-powered trading model for futures hedging strategies tailored to mining company revenue cycles. Incorporates Bloomberg Terminal futures curves, production data, and macro variables to generate hedging signals. Reduced simulated revenue volatility by ~25% through systematic, data-driven futures hedging in backtesting.</p>
+      <p class="project-tools">Built with Python, SQL, PowerBI, and Bloomberg Terminal data.</p>
+      <p class="project-links"><a href="#">[PLACEHOLDER] Live Demo</a><span class="sep">·</span><a href="#">[PLACEHOLDER] GitHub</a></p>
+    </div>
+
+    <div class="project">
+      <p class="project-title">[PLACEHOLDER] Project Title Two</p>
+      <p class="project-desc">[PLACEHOLDER] Two to three sentences describing the problem, approach, and outcome of the second project.</p>
+      <p class="project-tools">[PLACEHOLDER] Built with [tools].</p>
+      <p class="project-links"><a href="#">[PLACEHOLDER] Live Demo</a><span class="sep">·</span><a href="#">[PLACEHOLDER] GitHub</a></p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <ul class="contact-list">
+      <li><span class="label">Email</span><a href="mailto:hello@connorselfridge.com">[PLACEHOLDER]@email.com</a></li>
+      <li><span class="label">LinkedIn</span><a href="https://www.linkedin.com/in/connorselfridge">linkedin.com/in/connorselfridge</a></li>
+      <li><span class="label">X</span><a href="https://x.com/cjsfe">x.com/cjsfe</a></li>
+      <li><span class="label">Substack</span><a href="https://cjsfe.substack.com">cjsfe.substack.com</a></li>
+    </ul>
+    <p class="contact-note">Open to opportunities in digital asset research, revenue operations, and crypto infrastructure.</p>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 Connor Selfridge<span class="sep">·</span><a href="/resume.pdf">Download Resume (PDF)</a></p>
+</footer>
+
+</body>
+</html>
