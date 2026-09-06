@@ -142,25 +142,38 @@ close the loop.
 
 ---
 
-## 10. Open backlog: SEO (not yet done)
+## 10. SEO status (done 2026-09-06)
 
-1. **Title tag.** Currently `<title>Connor Selfridge</title>`, no suffix.
-   The pre-rebuild site used `Connor Selfridge | Revenue Operations & AI
-   Infrastructure`. The suffix was dropped in the rebuild and should be
-   restored or replaced. See TODO in section 11.
-2. **JSON-LD Person schema.** Not present. Should cover name, job title,
-   employer, alumni affiliation, and `sameAs` links (LinkedIn, X, Substack).
-3. **robots.txt.** Exists and already points at the sitemap. Confirm whether
-   any change is actually wanted, or whether this item is already satisfied.
+1. **Title tag.** Done. Restored to `Connor Selfridge | Revenue Operations &
+   AI Infrastructure`, the pre-rebuild string.
+2. **JSON-LD Person schema.** Done. Covers name, job title, employer,
+   `alumniOf`, `homeLocation`, `knowsAbout`, and three `sameAs` links.
+3. **robots.txt.** Was never missing. It has shipped since the first deploy.
+   Simplified on 2026-09-06 to a single `User-agent: *` block plus the
+   sitemap line; the per-bot blocks were redundant.
 
 ---
 
-## 11. TODO: confirm
+## 11. Page measure
 
-- **Title suffix wording.** Restore the old string verbatim, or use new copy?
-- **Now section.** Section 4 governs its prose, but no Now section exists in
-  `index.html`. Build it, or drop the clause?
+The opener and Now sections use `max-width: 34rem` (544px).
+The rest of the page still uses `62ch`, which computes to 586px (36.64rem).
+These are deliberately different. Do not unify them without being asked.
+
+---
+
+## 12. TODO: confirm
+
+- **Portrait.** `portrait-medium.jpg` is currently a 4:5 crop of the studio
+  headshot, NOT the London photo. The London file was never received.
+  Replace the file (same name, same 900x1125) and no code changes are needed.
+- **Opener first line.** "I am Connor Selfridge." sits directly under an `h1`
+  reading "Connor Selfridge". Verbatim as supplied. Drop one?
+- **Presidio Bitcoin** appears in both the opener and Now, as supplied.
+- **Graduation year.** Now says the MS is "expected 2027". The Education
+  section says "2025 - 2026". These disagree. Neither was changed.
+- **Nav.** A "Now" link was added as the first nav item, since a new section
+  without a nav entry would be unreachable from the nav. Revert if unwanted.
 - **Article date format.** Bare year, or month plus year for new entries?
-- **Writing list length.** Is there a cap after which older entries roll off,
-  or does the list grow without limit?
+- **Writing list length.** Is there a cap after which older entries roll off?
 - **Dek length.** Currently one line. Hard rule or soft preference?

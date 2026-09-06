@@ -24,7 +24,7 @@ jobs:
         run: |
           set -euo pipefail
 
-          SITE_FILES="index.html headshot.jpg favicon.png resume.pdf robots.txt sitemap.xml netlify.toml"
+          SITE_FILES="index.html portrait-medium.jpg headshot.jpg favicon.png resume.pdf robots.txt sitemap.xml netlify.toml"
 
           rm -rf /tmp/site
           mkdir -p /tmp/site

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Connor Selfridge</title>
+  <title>Connor Selfridge | Revenue Operations &amp; AI Infrastructure</title>
   <meta name="description" content="Connor Selfridge — Revenue Operations and macro analysis at the intersection of Bitcoin mining, energy markets, and digital asset infrastructure. Currently at MARA Holdings." />
   <meta name="author" content="Connor Selfridge" />
   <link rel="canonical" href="https://www.connorselfridge.com/" />
@@ -13,7 +13,7 @@
   <meta property="og:url" content="https://www.connorselfridge.com/" />
   <meta property="og:title" content="Connor Selfridge" />
   <meta property="og:description" content="Revenue Operations and macro analysis at the intersection of Bitcoin mining, energy markets, and digital asset infrastructure. Currently at MARA Holdings." />
-  <meta property="og:image" content="https://www.connorselfridge.com/headshot.jpg" />
+  <meta property="og:image" content="https://www.connorselfridge.com/portrait-medium.jpg" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@cjsfe" />
   <meta name="twitter:creator" content="@cjsfe" />
@@ -21,6 +21,43 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500&display=swap" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Connor Selfridge",
+    "url": "https://www.connorselfridge.com/",
+    "image": "https://www.connorselfridge.com/portrait-medium.jpg",
+    "jobTitle": "Revenue Operations Specialist",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "MARA Holdings",
+      "url": "https://www.mara.com"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Santa Clara University",
+      "url": "https://www.scu.edu"
+    },
+    "homeLocation": {
+      "@type": "Place",
+      "name": "San Francisco, California"
+    },
+    "knowsAbout": [
+      "Bitcoin mining",
+      "Digital asset infrastructure",
+      "Energy markets",
+      "Revenue operations",
+      "Macro analysis"
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/in/connorselfridge",
+      "https://x.com/cjsfe",
+      "https://cjsfe.substack.com"
+    ]
+  }
+  </script>
 
   <style>
     :root {
@@ -156,11 +193,15 @@
 
     .hero-text { flex: 1; min-width: 0; }
 
-    .hero-text .lede {
+    /* Opener prose: five short paragraphs at the 34rem measure. */
+    .opener p {
       font-size: 17px;
-      max-width: 62ch;
-      margin-bottom: 24px;
+      max-width: 34rem;
+      margin: 0 0 14px;
     }
+
+    .opener p:first-child { margin-bottom: 18px; }
+    .opener p:last-child { margin-bottom: 24px; }
 
     .hero-links {
       font-size: 15px;
@@ -174,10 +215,10 @@
       margin: 0 10px;
     }
 
-    .headshot {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
+    /* 4:5 portrait, no radius, no shadow, per the editorial constraint set. */
+    .portrait {
+      width: 168px;
+      height: 210px;
       object-fit: cover;
       flex-shrink: 0;
     }
@@ -185,12 +226,26 @@
     @media (max-width: 640px) {
       .hero {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         text-align: left;
       }
       .hero-text { width: 100%; }
-      .headshot { order: -1; align-self: center; }
+      .portrait {
+        order: -1;
+        align-self: center;
+        width: 150px;
+        height: 188px;
+        margin-bottom: 8px;
+      }
     }
+
+    /* ---------- Now ---------- */
+    .now p {
+      max-width: 34rem;
+      margin: 0 0 10px;
+    }
+
+    .now p:last-child { margin-bottom: 0; }
 
     /* ---------- Writing ---------- */
     .writing-intro {
@@ -357,6 +412,7 @@
 <nav class="nav" aria-label="Primary">
   <a class="brand" href="#top">Connor Selfridge</a>
   <ul>
+    <li><a href="#now">Now</a></li>
     <li><a href="#writing">Writing</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#education">Education</a></li>
@@ -370,7 +426,13 @@
   <section class="hero" aria-label="Introduction">
     <div class="hero-text">
       <h1>Connor Selfridge</h1>
-      <p class="lede">Revenue operations and macro analysis at the intersection of Bitcoin mining, energy markets, and digital asset infrastructure. Currently at MARA Holdings.</p>
+      <div class="opener">
+        <p>I am Connor Selfridge.</p>
+        <p>I started my career extremely passionate and willing to enter the blockchain industry. After founding Santa Clara University's first blockchain club, I knew I wanted to start my career contributing to an industry that delivers economic freedom and transparency for individuals and corporations across the world.</p>
+        <p>My first internship at MARA Holdings centered on Bitcoin mining, hardware, and site acquisitions. I pivoted to serve our commercial team, which gave me direct exposure to AI infrastructure, digital energy markets, and blockchain services, bundling everything together to serve data center and mixed compute workloads.</p>
+        <p>That experience grew my skill set from a narrow industry such as blockchain to a broader focus on digital infrastructure, energy, financial services, and commercial and go-to-market strategy.</p>
+        <p>I am an active member of Presidio Bitcoin in San Francisco, a core hub for people focused on contributing to the Bitcoin network and adding value to the overall ecosystem.</p>
+      </div>
       <p class="hero-links">
         <a href="https://www.linkedin.com/in/connorselfridge">LinkedIn</a><span class="sep">·</span>
         <a href="https://x.com/cjsfe">X</a><span class="sep">·</span>
@@ -378,7 +440,14 @@
         <a href="mailto:hello@connorselfridge.com">Email</a>
       </p>
     </div>
-    <img class="headshot" src="/headshot.jpg" alt="Connor Selfridge" width="120" height="120" />
+    <img class="portrait" src="/portrait-medium.jpg" alt="Connor Selfridge" width="900" height="1125" />
+  </section>
+
+  <section id="now" class="now">
+    <h2>Now</h2>
+    <p>Revenue operations at MARA Holdings in San Francisco.</p>
+    <p>Finishing an MS in Finance and Analytics at Santa Clara University, expected 2027.</p>
+    <p>Active member of Presidio Bitcoin.</p>
   </section>
 
   <section id="writing">
