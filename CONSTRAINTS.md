@@ -211,6 +211,31 @@ The first new entry goes at that comment, using the section 8 template.
 
 ---
 
+## 12c. Simplification pass 2026-09-06
+
+Connor's direction: less is more, the page should reward a quick scan.
+
+- Nav no longer repeats the name. The `h1` is the only "Connor Selfridge".
+- Opener leads with an entrepreneurial hook, not the old "extremely
+  passionate and willing to enter" line, which read as past tense.
+- Experience is ONE summary line per role, not bullet lists. What a scanner
+  should take away: MARA = digital infrastructure, data centers, Bitcoin
+  mining, commercial growth. Shield3 = investment research, protocol risk,
+  cyber security. Jewel Bank = stablecoins.
+- Projects cut to one short entry. Connor is considering replacing this
+  section with investment write-ups instead. Do not expand it.
+- Contact closing line removed.
+
+**No en dashes either.** The earlier ban covered em dashes in prose; date
+ranges now use plain words ("2025 to present") or hyphens. Em dash is still
+correct in `Role — Company` and `Degree — University` separators.
+
+**Writing subject matter changed** to robotics, healthcare, the sciences,
+and digital assets. Articles are linked individually on the page so they
+index against this domain, not only against Substack.
+
+---
+
 ## 13. TODO: confirm
 
 - **Article date format.** Bare year, or month plus year for new entries?
