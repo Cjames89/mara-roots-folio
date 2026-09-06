@@ -203,5 +203,17 @@ These are deliberately different. Do not unify them without being asked.
 - **Article date format.** Bare year, or month plus year for new entries?
 - **Writing list length.** Is there a cap after which older entries roll off?
 - **Dek length.** Currently one line. Hard rule or soft preference?
-- **Placeholder entries.** Writing articles two and three, project two, and
-  the contact email are still `[PLACEHOLDER]` on the live site.
+- **Contact email.** The site publishes `hello@connorselfridge.com`. Confirm
+  that address forwards somewhere Connor reads, or supply the correct one.
+  A personal address was deliberately not published without approval.
+
+---
+
+## 14. No placeholders rule
+
+All `[PLACEHOLDER]` blocks were removed on 2026-09-06. The Writing section
+carries one real article and the Projects section one real project.
+
+Going forward: a short honest section beats a padded one. Never ship
+`[PLACEHOLDER]` text or `href="#"` to the live site. If content is not ready,
+omit the entry entirely and add it when it exists.
