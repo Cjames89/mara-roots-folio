@@ -1,0 +1,38 @@
+# The site is assembled into dist/ rather than published from the repo root.
+# Publishing "." would serve CONSTRAINTS.md and .github/ at public URLs.
+# This copy step is branch-agnostic: every listed file exists on both main
+# and gh-pages, so Netlify deploys correctly whichever is set as production.
+
+[build]
+  publish = "dist"
+  command = "mkdir -p dist && cp index.html favicon.png portrait-medium.jpg headshot.jpg resume.pdf robots.txt sitemap.xml dist/"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# HTML must revalidate so copy edits appear immediately after a deploy.
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Static assets cache for a week. Deliberately not "immutable": these
+# filenames are stable, so a swapped favicon or resume must still expire.
+[[headers]]
+  for = "/*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/resume.pdf"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
