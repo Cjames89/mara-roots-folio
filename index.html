@@ -184,16 +184,9 @@
     .muted { color: var(--muted); }
 
     /* ---------- Hero ---------- */
-    .hero {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 32px;
-    }
+    .hero-text { min-width: 0; }
 
-    .hero-text { flex: 1; min-width: 0; }
-
-    /* Opener prose: five short paragraphs at the 34rem measure. */
+    /* Opener prose at the 34rem measure. */
     .opener p {
       font-size: 17px;
       max-width: 34rem;
@@ -214,28 +207,8 @@
       margin: 0 10px;
     }
 
-    /* 4:5 portrait, no radius, no shadow, per the editorial constraint set. */
-    .portrait {
-      width: 168px;
-      height: 210px;
-      object-fit: cover;
-      flex-shrink: 0;
-    }
-
     @media (max-width: 640px) {
-      .hero {
-        flex-direction: column;
-        align-items: flex-start;
-        text-align: left;
-      }
       .hero-text { width: 100%; }
-      .portrait {
-        order: -1;
-        align-self: center;
-        width: 150px;
-        height: 188px;
-        margin-bottom: 8px;
-      }
     }
 
     /* ---------- Now ---------- */
@@ -438,7 +411,6 @@
         <a href="mailto:hello@connorselfridge.com">Email</a>
       </p>
     </div>
-    <img class="portrait" src="/portrait-medium.jpg" alt="Connor Selfridge" width="900" height="1125" />
   </section>
 
   <section id="now" class="now">
