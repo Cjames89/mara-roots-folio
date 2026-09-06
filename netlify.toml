@@ -1,2 +1,37 @@
+# Deployed from the gh-pages branch, which the publish workflow rebuilds from
+# main on every push. That branch holds only the site files, so no build step
+# runs here and nothing internal (CONSTRAINTS.md, .github/) is ever served.
+
 [build]
   publish = "."
+  command = ""
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# HTML must revalidate so copy edits appear immediately after a deploy.
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Static assets can cache for a week. Deliberately not "immutable": these
+# filenames are stable, so a swapped favicon or resume must still expire.
+[[headers]]
+  for = "/*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/resume.pdf"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
