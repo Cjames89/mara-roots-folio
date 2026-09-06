@@ -198,6 +198,19 @@ These are deliberately different. Do not unify them without being asked.
 
 ---
 
+## 12b. Writing section reset 2026-09-06
+
+Connor restarted his writing. The Bitcoin vs Gold vs Silver entry was
+removed and the Writing section is now empty by design: header, intro line,
+and the Substack link only. An HTML comment marks the insertion point.
+
+The Substack handle changed from `cjsfe` to `connorselfridge`. Any URL
+containing `/pub/cjsfe/` is stale and must not be reintroduced.
+
+The first new entry goes at that comment, using the section 8 template.
+
+---
+
 ## 13. TODO: confirm
 
 - **Article date format.** Bare year, or month plus year for new entries?
