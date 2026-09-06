@@ -1,11 +1,16 @@
-# The site is assembled into dist/ rather than published from the repo root.
-# Publishing "." would serve CONSTRAINTS.md and .github/ at public URLs.
-# This copy step is branch-agnostic: every listed file exists on both main
-# and gh-pages, so Netlify deploys correctly whichever is set as production.
+# No build step. The repo root now contains only site files, so it is safe to
+# publish directly. Internal docs live in .github/, which Netlify does not
+# serve, and dotfiles are excluded automatically.
+#
+# This deliberately has no build command: a build command is the single
+# largest failure surface here, and an empty one cannot fail. If Netlify's
+# UI has a stale command set (the pre-rebuild config ran "npm install &&
+# npm run build"), the UI overrides this file and the deploy fails. Clear
+# the Build command and Publish directory fields in the Netlify UI so this
+# file governs.
 
 [build]
-  publish = "dist"
-  command = "mkdir -p dist && cp index.html favicon.png portrait-medium.jpg headshot.jpg resume.pdf robots.txt sitemap.xml dist/"
+  publish = "."
 
 [[headers]]
   for = "/*"
