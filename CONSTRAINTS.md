@@ -73,6 +73,26 @@ In prose, use commas, colons, or parentheses instead.
 
 ---
 
+## 4b. Voice and editing latitude
+
+Site copy is written in Connor's own first-person voice, usually transcribed
+from speech. That voice is the point and must survive editing.
+
+Latitude granted 2026-09-06: **redundancy may be tweaked.** If a line repeats
+something the page already says, it can be trimmed or dropped. What may not
+change is tone, register, or first-person phrasing. Do not neutralize, do not
+corporate-ize, do not smooth out characteristic phrasing just because it reads
+informally.
+
+Worked example: "I am Connor Selfridge." was dropped from the opener because
+an `h1` two lines above already said it. The remaining four paragraphs stayed
+100% verbatim.
+
+Article **deks** are a separate case and remain strictly verbatim. See
+section 8.
+
+---
+
 ## 5. MARA policy
 
 The employer **name stays** everywhere it currently appears, unchanged:
@@ -162,18 +182,26 @@ These are deliberately different. Do not unify them without being asked.
 
 ---
 
-## 12. TODO: confirm
+## 12. Resolved 2026-09-06
 
-- **Portrait.** `portrait-medium.jpg` is currently a 4:5 crop of the studio
-  headshot, NOT the London photo. The London file was never received.
-  Replace the file (same name, same 900x1125) and no code changes are needed.
-- **Opener first line.** "I am Connor Selfridge." sits directly under an `h1`
-  reading "Connor Selfridge". Verbatim as supplied. Drop one?
-- **Presidio Bitcoin** appears in both the opener and Now, as supplied.
-- **Graduation year.** Now says the MS is "expected 2027". The Education
-  section says "2025 - 2026". These disagree. Neither was changed.
-- **Nav.** A "Now" link was added as the first nav item, since a new section
-  without a nav entry would be unreachable from the nav. Revert if unwanted.
+- **Portrait.** Settled: use the regular studio headshot, not a London photo.
+  `portrait-medium.jpg` is a 900x1125 4:5 progressive crop of it. Correct
+  as shipped. No London file is needed or expected.
+- **Opener first line.** "I am Connor Selfridge." dropped as redundant with
+  the `h1`. See section 4b.
+- **Graduation year.** Connor graduates in 2027. Education corrected from
+  "2025 - 2026" to "2025 - 2027". Now section already said 2027 and was right.
+- **Nav.** "Now" added as the first nav item. Reviewed, kept.
+- **Presidio Bitcoin** still appears in both the opener and Now. Kept
+  deliberately: the opener mention is narrative, the Now mention is a
+  scannable status line. Different jobs, so not treated as redundancy.
+
+---
+
+## 13. TODO: confirm
+
 - **Article date format.** Bare year, or month plus year for new entries?
 - **Writing list length.** Is there a cap after which older entries roll off?
 - **Dek length.** Currently one line. Hard rule or soft preference?
+- **Placeholder entries.** Writing articles two and three, project two, and
+  the contact email are still `[PLACEHOLDER]` on the live site.
