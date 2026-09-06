@@ -1,10 +1,11 @@
-# Deployed from the gh-pages branch, which the publish workflow rebuilds from
-# main on every push. That branch holds only the site files, so no build step
-# runs here and nothing internal (CONSTRAINTS.md, .github/) is ever served.
+# The site is assembled into dist/ rather than published from the repo root.
+# Publishing "." would serve CONSTRAINTS.md and .github/ at public URLs.
+# This copy step is branch-agnostic: every listed file exists on both main
+# and gh-pages, so Netlify deploys correctly whichever is set as production.
 
 [build]
-  publish = "."
-  command = ""
+  publish = "dist"
+  command = "mkdir -p dist && cp index.html favicon.png portrait-medium.jpg headshot.jpg resume.pdf robots.txt sitemap.xml dist/"
 
 [[headers]]
   for = "/*"
@@ -19,7 +20,7 @@
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
 
-# Static assets can cache for a week. Deliberately not "immutable": these
+# Static assets cache for a week. Deliberately not "immutable": these
 # filenames are stable, so a swapped favicon or resume must still expire.
 [[headers]]
   for = "/*.png"
