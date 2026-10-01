@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Connor Selfridge</title>
+  <meta name="description" content="Connor Selfridge. Finance and tech professional with experience in data centers, Bitcoin mining, finance strategy and analytics, and investment management." />
+  <meta name="author" content="Connor Selfridge" />
+  <link rel="canonical" href="https://www.connorselfridge.com/" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <meta property="og:type" content="profile" />
+  <meta property="og:url" content="https://www.connorselfridge.com/" />
+  <meta property="og:title" content="Connor Selfridge" />
+  <meta property="og:description" content="Finance and tech professional with experience in data centers, Bitcoin mining, finance strategy and analytics, and investment management." />
+  <meta property="og:image" content="https://www.connorselfridge.com/headshot.jpg" />
+  <meta name="twitter:card" content="summary" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Connor Selfridge",
+    "url": "https://www.connorselfridge.com/",
+    "image": "https://www.connorselfridge.com/headshot.jpg",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Santa Clara University",
+      "url": "https://www.scu.edu"
+    },
+    "homeLocation": { "@type": "Place", "name": "San Francisco, California" },
+    "sameAs": ["https://www.linkedin.com/in/connor-selfridge/"]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #f5f2ec;
+      --card: #ffffff;
+      --navy: #1b2a41;
+      --text: #22252b;
+      --muted: #7a7f88;
+      --rule: #ddd7cc;
+      --dot: #1b2a41;
+      --serif: 'EB Garamond', Georgia, 'Times New Roman', serif;
+      --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--sans);
+      font-size: 16px;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--navy); }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 64px 32px 40px;
+    }
+
+    /* ---------- Header ---------- */
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      margin-bottom: 28px;
+    }
+
+    .headshot {
+      width: 112px;
+      height: 112px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+      border: 3px solid #fff;
+      box-shadow: 0 1px 4px rgba(27, 42, 65, 0.15);
+    }
+
+    h1 {
+      font-family: var(--serif);
+      font-weight: 600;
+      color: var(--navy);
+      font-size: 52px;
+      line-height: 1.05;
+      margin: 0 0 6px;
+      letter-spacing: -0.01em;
+    }
+
+    .subhead {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .headline {
+      font-size: 18px;
+      line-height: 1.6;
+      max-width: 40rem;
+      margin: 0 0 18px;
+    }
+
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px 14px;
+      font-size: 14px;
+      margin: 0;
+    }
+
+
+    .li-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      text-decoration: none;
+      font-weight: 500;
+      border: 1px solid var(--rule);
+      background: var(--card);
+      border-radius: 999px;
+      padding: 4px 12px;
+    }
+
+    .li-link:hover { border-color: var(--navy); }
+
+    .li-link svg { width: 14px; height: 14px; fill: #0a66c2; }
+
+    /* ---------- Sections ---------- */
+    section { margin-top: 56px; }
+
+    h2 {
+      font-family: var(--serif);
+      font-weight: 600;
+      color: var(--navy);
+      font-size: 30px;
+      margin: 0 0 22px;
+    }
+
+    .divider {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      color: var(--muted);
+      margin: 0 0 18px;
+    }
+
+    .divider::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: var(--rule);
+    }
+
+    /* ---------- Timeline ---------- */
+    .timeline {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      position: relative;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 6px;
+      top: 14px;
+      bottom: 14px;
+      width: 2px;
+      background: var(--rule);
+    }
+
+    .entry {
+      position: relative;
+      display: flex;
+      gap: 18px;
+      padding: 0 0 30px 34px;
+    }
+
+    .entry:last-child { padding-bottom: 0; }
+
+    .entry::before {
+      content: "";
+      position: absolute;
+      left: 1px;
+      top: 22px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--dot);
+      box-shadow: 0 0 0 4px var(--bg);
+    }
+
+    .logo {
+      width: 56px;
+      height: 56px;
+      flex-shrink: 0;
+      border-radius: 12px;
+      background: var(--card);
+      border: 1px solid var(--rule);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .logo img { width: 100%; height: 100%; object-fit: contain; }
+    .logo.pad img { width: 76%; height: 76%; }
+
+    .logo.mono {
+      background: var(--navy);
+      border-color: var(--navy);
+      color: #f5f2ec;
+      font-family: var(--serif);
+      font-weight: 600;
+      font-size: 15px;
+      letter-spacing: 0.02em;
+      text-align: center;
+      line-height: 1.05;
+    }
+
+    .role { margin: 2px 0 2px; font-weight: 600; font-size: 17px; color: var(--text); }
+    .org { margin: 0; font-size: 15px; }
+    .when { margin: 0 0 6px; font-size: 14px; color: var(--muted); }
+    .desc { margin: 0; font-family: var(--serif); font-style: italic; font-size: 18.5px; color: var(--muted); line-height: 1.45; }
+
+    /* ---------- Education ---------- */
+    .edu { display: flex; gap: 18px; align-items: flex-start; }
+    .edu-lines p { margin: 0; }
+    .edu-lines .degree { font-weight: 600; font-size: 16px; margin-top: 8px; }
+    .edu-lines .degree:first-of-type { margin-top: 2px; }
+    .edu-lines .detail { font-size: 14px; color: var(--muted); }
+
+    /* ---------- Skills ---------- */
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .skill-group {
+      background: var(--card);
+      border: 1px solid var(--rule);
+      border-radius: 14px;
+      padding: 18px 18px 14px;
+    }
+
+    .skill-group h3 {
+      margin: 0 0 12px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--navy);
+    }
+
+    .chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; padding: 0; list-style: none; }
+
+    .chips li {
+      font-size: 13.5px;
+      background: var(--bg);
+      border: 1px solid var(--rule);
+      border-radius: 999px;
+      padding: 3px 10px;
+    }
+
+    footer {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 28px 32px 56px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    footer .inner { border-top: 1px solid var(--rule); padding-top: 20px; }
+
+    /* ---------- Mobile ---------- */
+    @media (max-width: 640px) {
+      main { padding: 36px 16px 24px; }
+      footer { padding: 20px 16px 40px; }
+      .header { gap: 16px; }
+      .headshot { width: 76px; height: 76px; }
+      h1 { font-size: 34px; }
+      .headline { font-size: 16.5px; }
+      h2 { font-size: 26px; }
+      .entry { gap: 14px; padding-left: 28px; }
+      .logo { width: 46px; height: 46px; border-radius: 10px; }
+      .logo.mono { font-size: 12px; }
+      .entry::before { top: 17px; }
+      .skills { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<main>
+
+  <header class="header">
+    <img class="headshot" src="headshot.jpg" alt="Connor Selfridge" width="112" height="112" />
+    <div>
+      <h1>Connor Selfridge</h1>
+      <p class="subhead">San Francisco, CA</p>
+    </div>
+  </header>
+
+  <p class="headline">Finance and tech professional with experience in data centers, Bitcoin mining, finance strategy and analytics, and investment management.</p>
+
+  <p class="meta-row">
+    <a class="li-link" href="https://www.linkedin.com/in/connor-selfridge/" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+      LinkedIn
+    </a>
+  </p>
+
+  <section id="experience" aria-labelledby="exp-h">
+    <h2 id="exp-h">Experience</h2>
+    <p class="divider">PAST</p>
+
+    <ol class="timeline">
+      <!-- Source: resume (all 4 versions agree). Employment type for this role is not stated on the resume. -->
+      <li class="entry">
+        <div class="logo"><img src="logo-mara.png" alt="MARA Holdings logo" /></div>
+        <div>
+          <p class="role">Revenue Operations Specialist</p>
+          <p class="org">MARA Holdings</p>
+          <p class="when">Feb 2026 to Sep 2026 · San Francisco, CA</p>
+          <p class="desc">Built a custom CRM using AI agents and analyzed $1B+ in data center deals.</p>
+        </div>
+      </li>
+
+      <li class="entry">
+        <div class="logo"><img src="logo-mara.png" alt="MARA Holdings logo" /></div>
+        <div>
+          <p class="role">Growth Strategy Analyst Intern</p>
+          <p class="org">MARA Holdings</p>
+          <p class="when">Jun 2025 to Jan 2026 · San Francisco, CA</p>
+          <p class="desc">Site analysis, energy contracts, and liquid cooling strategy for AI data centers.</p>
+        </div>
+      </li>
+
+      <li class="entry">
+        <div class="logo mono" aria-hidden="true">B@<br />SCU</div>
+        <div>
+          <p class="role">Founder and Co-President</p>
+          <p class="org">Blockchain@SCU · Student organization</p>
+          <p class="when">Apr 2024 to Jun 2025 · Santa Clara, CA</p>
+          <p class="desc">Founded and grew Santa Clara University's blockchain club to 125+ students.</p>
+        </div>
+      </li>
+
+      <li class="entry">
+        <div class="logo pad"><img src="logo-sumeru.png" alt="Sumeru Equity Partners logo" /></div>
+        <div>
+          <p class="role">Private Equity Summer Analyst</p>
+          <p class="org">Sumeru Equity Partners</p>
+          <p class="when">Jun 2022 to Aug 2022 · San Mateo, CA</p>
+          <p class="desc">Forecasted fund IRR and analyzed 20 SaaS portfolio companies.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section id="education" aria-labelledby="edu-h">
+    <h2 id="edu-h">Education</h2>
+    <div class="edu">
+      <div class="logo"><img src="logo-scu.png" alt="Santa Clara University logo" /></div>
+      <div class="edu-lines">
+        <p class="degree">Santa Clara University</p>
+        <p class="detail">Leavey School of Business</p>
+        <p class="degree">MS, Finance and Analytics</p>
+        <p class="detail">In progress, expected 2027</p>
+        <p class="degree">BS, Economics, Cum Laude</p>
+        <p class="detail">2025</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" aria-labelledby="skills-h">
+    <h2 id="skills-h">Skills</h2>
+    <div class="skills">
+      <div class="skill-group">
+        <h3>Finance &amp; Strategy</h3>
+        <ul class="chips">
+          <li>Financial modeling</li>
+          <li>Forecasting and budgeting</li>
+          <li>Strategic finance</li>
+          <li>Investment research</li>
+          <li>Private markets</li>
+          <li>Go to market strategy</li>
+          <li>Executive reporting</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Revenue Operations &amp; Systems</h3>
+        <ul class="chips">
+          <li>Sales and revenue operations</li>
+          <li>CRM administration</li>
+          <li>Pipeline and forecast reporting</li>
+          <li>Deal desk and pricing support</li>
+          <li>Salesforce</li>
+          <li>HubSpot</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Data &amp; Tools</h3>
+        <ul class="chips">
+          <li>Excel</li>
+          <li>PowerPoint</li>
+          <li>Bloomberg</li>
+          <li>Python</li>
+          <li>SQL</li>
+          <li>AI agents and workflow automation</li>
+          <li>Data analysis</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Industry</h3>
+        <ul class="chips">
+          <li>AI infrastructure</li>
+          <li>Data centers</li>
+          <li>Compute and infrastructure economics</li>
+          <li>Bitcoin mining</li>
+          <li>Digital assets</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="inner">© 2026 Connor Selfridge</div>
+</footer>
+
+</body>
+</html>
