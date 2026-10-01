@@ -5,7 +5,7 @@
 
 [build]
   publish = "dist"
-  command = "mkdir -p dist && cp index.html favicon.png portrait-medium.jpg headshot.jpg resume.pdf robots.txt sitemap.xml dist/"
+  command = "mkdir -p dist && cp index.html favicon.png headshot.jpg logo-mara.png logo-scu.png logo-sumeru.png robots.txt sitemap.xml dist/"
 
 [[headers]]
   for = "/*"
@@ -32,7 +32,3 @@
   [headers.values]
     Cache-Control = "public, max-age=604800"
 
-[[headers]]
-  for = "/resume.pdf"
-  [headers.values]
-    Cache-Control = "public, max-age=86400"
