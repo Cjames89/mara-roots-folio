@@ -5,7 +5,7 @@
 
 [build]
   publish = "dist"
-  command = "mkdir -p dist && cp index.html favicon.png headshot.jpg logo-mara.png logo-scu.png logo-sumeru.png robots.txt sitemap.xml dist/"
+  command = "mkdir -p dist && cp index.html favicon.png headshot.jpg logo-mara.png logo-scu.png logo-sumeru.png logo-blockchainscu.png robots.txt sitemap.xml dist/"
 
 [[headers]]
   for = "/*"

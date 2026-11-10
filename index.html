@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Connor Selfridge</title>
-  <meta name="description" content="Connor Selfridge. Finance and tech professional with experience in data centers, Bitcoin mining, finance strategy and analytics, and investment management." />
+  <meta name="description" content="Connor Selfridge. Finance and technology professional, passionate about long term investing in data centers, semiconductors, robotics, and emerging technology." />
   <meta name="author" content="Connor Selfridge" />
   <link rel="canonical" href="https://www.connorselfridge.com/" />
   <link rel="icon" type="image/png" href="favicon.png" />
@@ -12,7 +12,7 @@
   <meta property="og:type" content="profile" />
   <meta property="og:url" content="https://www.connorselfridge.com/" />
   <meta property="og:title" content="Connor Selfridge" />
-  <meta property="og:description" content="Finance and tech professional with experience in data centers, Bitcoin mining, finance strategy and analytics, and investment management." />
+  <meta property="og:description" content="Finance and technology professional, passionate about long term investing in data centers, semiconductors, robotics, and emerging technology." />
   <meta property="og:image" content="https://www.connorselfridge.com/headshot.jpg" />
   <meta name="twitter:card" content="summary" />
 
@@ -148,24 +148,6 @@
       margin: 0 0 22px;
     }
 
-    .divider {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 0.14em;
-      color: var(--muted);
-      margin: 0 0 18px;
-    }
-
-    .divider::after {
-      content: "";
-      flex: 1;
-      height: 1px;
-      background: var(--rule);
-    }
-
     /* ---------- Timeline ---------- */
     .timeline {
       list-style: none;
@@ -218,25 +200,19 @@
       overflow: hidden;
     }
 
+    /* Each logo file is a square with its mark already centered and padded */
     .logo img { width: 100%; height: 100%; object-fit: contain; }
-    .logo.pad img { width: 76%; height: 76%; }
-
-    .logo.mono {
-      background: var(--navy);
-      border-color: var(--navy);
-      color: #f5f2ec;
-      font-family: var(--serif);
-      font-weight: 600;
-      font-size: 15px;
-      letter-spacing: 0.02em;
-      text-align: center;
-      line-height: 1.05;
-    }
+    .logo.full { border: none; }
 
     .role { margin: 2px 0 2px; font-weight: 600; font-size: 17px; color: var(--text); }
     .org { margin: 0; font-size: 15px; }
-    .when { margin: 0 0 6px; font-size: 14px; color: var(--muted); }
-    .desc { margin: 0; font-family: var(--serif); font-style: italic; font-size: 18.5px; color: var(--muted); line-height: 1.45; }
+    .when { margin: 0; font-size: 14px; color: var(--muted); }
+
+    /* Several roles at one company, grouped like LinkedIn */
+    .company { margin: 2px 0 0; font-weight: 600; font-size: 17px; color: var(--text); }
+    .company + .when { margin-bottom: 10px; }
+    .sub { margin-top: 10px; padding-left: 14px; border-left: 2px solid var(--rule); }
+    .sub .role { font-size: 16px; }
 
     /* ---------- Education ---------- */
     .edu { display: flex; gap: 18px; align-items: flex-start; }
@@ -244,39 +220,6 @@
     .edu-lines .degree { font-weight: 600; font-size: 16px; margin-top: 8px; }
     .edu-lines .degree:first-of-type { margin-top: 2px; }
     .edu-lines .detail { font-size: 14px; color: var(--muted); }
-
-    /* ---------- Skills ---------- */
-    .skills {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 16px;
-    }
-
-    .skill-group {
-      background: var(--card);
-      border: 1px solid var(--rule);
-      border-radius: 14px;
-      padding: 18px 18px 14px;
-    }
-
-    .skill-group h3 {
-      margin: 0 0 12px;
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--navy);
-    }
-
-    .chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; padding: 0; list-style: none; }
-
-    .chips li {
-      font-size: 13.5px;
-      background: var(--bg);
-      border: 1px solid var(--rule);
-      border-radius: 999px;
-      padding: 3px 10px;
-    }
 
     footer {
       max-width: 760px;
@@ -299,9 +242,7 @@
       h2 { font-size: 26px; }
       .entry { gap: 14px; padding-left: 28px; }
       .logo { width: 46px; height: 46px; border-radius: 10px; }
-      .logo.mono { font-size: 12px; }
       .entry::before { top: 17px; }
-      .skills { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -317,7 +258,7 @@
     </div>
   </header>
 
-  <p class="headline">Finance and tech professional with experience in data centers, Bitcoin mining, finance strategy and analytics, and investment management.</p>
+  <p class="headline">Finance and technology professional, passionate about long term investing in data centers, semiconductors, robotics, and emerging technology.</p>
 
   <p class="meta-row">
     <a class="li-link" href="https://www.linkedin.com/in/connor-selfridge/" target="_blank" rel="noopener">
@@ -328,47 +269,40 @@
 
   <section id="experience" aria-labelledby="exp-h">
     <h2 id="exp-h">Experience</h2>
-    <p class="divider">PAST</p>
 
+    <!-- Source: LinkedIn experience, read 11/9/2026. Titles, companies and dates match it exactly. -->
     <ol class="timeline">
-      <!-- Source: resume (all 4 versions agree). Employment type for this role is not stated on the resume. -->
       <li class="entry">
-        <div class="logo"><img src="logo-mara.png" alt="MARA Holdings logo" /></div>
+        <div class="logo"><img src="logo-mara.png" alt="MARA logo" /></div>
         <div>
-          <p class="role">Revenue Operations Specialist</p>
-          <p class="org">MARA Holdings</p>
-          <p class="when">Feb 2026 to Sep 2026 · San Francisco, CA</p>
-          <p class="desc">Built a custom CRM using AI agents and analyzed $1B+ in data center deals.</p>
+          <p class="company">MARA</p>
+          <p class="when">San Francisco, CA</p>
+          <div class="sub">
+            <p class="role">Revenue Operations Specialist</p>
+            <p class="when">Jan 2026 to Sep 2026</p>
+          </div>
+          <div class="sub">
+            <p class="role">Growth Strategy Analyst Intern</p>
+            <p class="when">Jun 2025 to Dec 2025</p>
+          </div>
         </div>
       </li>
 
       <li class="entry">
-        <div class="logo"><img src="logo-mara.png" alt="MARA Holdings logo" /></div>
+        <div class="logo full"><img src="logo-blockchainscu.png" alt="Blockchain@SCU logo" /></div>
         <div>
-          <p class="role">Growth Strategy Analyst Intern</p>
-          <p class="org">MARA Holdings</p>
-          <p class="when">Jun 2025 to Jan 2026 · San Francisco, CA</p>
-          <p class="desc">Site analysis, energy contracts, and liquid cooling strategy for AI data centers.</p>
-        </div>
-      </li>
-
-      <li class="entry">
-        <div class="logo mono" aria-hidden="true">B@<br />SCU</div>
-        <div>
-          <p class="role">Founder and Co-President</p>
-          <p class="org">Blockchain@SCU · Student organization</p>
+          <p class="role">Founder &amp; Co-President</p>
+          <p class="org">Blockchain@SCU</p>
           <p class="when">Apr 2024 to Jun 2025 · Santa Clara, CA</p>
-          <p class="desc">Founded and grew Santa Clara University's blockchain club to 125+ students.</p>
         </div>
       </li>
 
       <li class="entry">
-        <div class="logo pad"><img src="logo-sumeru.png" alt="Sumeru Equity Partners logo" /></div>
+        <div class="logo"><img src="logo-sumeru.png" alt="Sumeru Equity Partners logo" /></div>
         <div>
-          <p class="role">Private Equity Summer Analyst</p>
+          <p class="role">Private Equity Summer Fellow</p>
           <p class="org">Sumeru Equity Partners</p>
           <p class="when">Jun 2022 to Aug 2022 · San Mateo, CA</p>
-          <p class="desc">Forecasted fund IRR and analyzed 20 SaaS portfolio companies.</p>
         </div>
       </li>
     </ol>
@@ -389,53 +323,15 @@
     </div>
   </section>
 
-  <section id="skills" aria-labelledby="skills-h">
-    <h2 id="skills-h">Skills</h2>
-    <div class="skills">
-      <div class="skill-group">
-        <h3>Finance &amp; Strategy</h3>
-        <ul class="chips">
-          <li>Financial modeling</li>
-          <li>Forecasting and budgeting</li>
-          <li>Strategic finance</li>
-          <li>Investment research</li>
-          <li>Private markets</li>
-          <li>Go to market strategy</li>
-          <li>Executive reporting</li>
-        </ul>
-      </div>
-      <div class="skill-group">
-        <h3>Revenue Operations &amp; Systems</h3>
-        <ul class="chips">
-          <li>Sales and revenue operations</li>
-          <li>CRM administration</li>
-          <li>Pipeline and forecast reporting</li>
-          <li>Deal desk and pricing support</li>
-          <li>Salesforce</li>
-          <li>HubSpot</li>
-        </ul>
-      </div>
-      <div class="skill-group">
-        <h3>Data &amp; Tools</h3>
-        <ul class="chips">
-          <li>Excel</li>
-          <li>PowerPoint</li>
-          <li>Bloomberg</li>
-          <li>Python</li>
-          <li>SQL</li>
-          <li>AI agents and workflow automation</li>
-          <li>Data analysis</li>
-        </ul>
-      </div>
-      <div class="skill-group">
-        <h3>Industry</h3>
-        <ul class="chips">
-          <li>AI infrastructure</li>
-          <li>Data centers</li>
-          <li>Compute and infrastructure economics</li>
-          <li>Bitcoin mining</li>
-          <li>Digital assets</li>
-        </ul>
+  <section id="projects" aria-labelledby="proj-h">
+    <h2 id="proj-h">Projects</h2>
+    <!-- SCU practicum (not a Bloomberg engagement): Bloomberg was only the data source. Kept light until the MS social media policy check. -->
+    <div class="edu">
+      <div class="logo"><img src="logo-scu.png" alt="Santa Clara University logo" /></div>
+      <div class="edu-lines">
+        <p class="degree">Commodity Futures Strategy</p>
+        <p class="detail">Santa Clara University · MS Finance and Analytics practicum, 2026</p>
+        <p class="detail">Built on Bloomberg futures data</p>
       </div>
     </div>
   </section>
